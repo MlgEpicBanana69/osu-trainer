@@ -78,7 +78,16 @@ namespace osu_trainer
             new UserProfile("Profile 1"),
             new UserProfile("Profile 2"),
             new UserProfile("Profile 3"),
-            new UserProfile("Profile 4")};
+            new UserProfile("Profile 4"),
+            new UserProfile("Profile 5"),
+            new UserProfile("Profile 6"),
+            new UserProfile("Profile 7"),
+            new UserProfile("Profile 8"),
+            new UserProfile("Profile 9"),
+            new UserProfile("Profile 10"),
+            new UserProfile("Profile 11"),
+            new UserProfile("Profile 12"),
+        };
 
         // public getters only
         // to set, call set methods
@@ -98,6 +107,7 @@ namespace osu_trainer
         public bool NoSpinners { get; private set; }
         public bool ChangePitch { get; private set; }
         public bool HighQualityMp3s { get; private set; }
+        public bool OpenBeatmap { get; private set; }
 
         public BeatmapEditor(MainForm f)
         {
@@ -125,6 +135,7 @@ namespace osu_trainer
             ChangePitch = Properties.Settings.Default.ChangePitch;
             NoSpinners = Properties.Settings.Default.NoSpinners;
             HighQualityMp3s = Properties.Settings.Default.HighQualityMp3s;
+            OpenBeatmap = Properties.Settings.Default.OpenBeatmap;
 
             LoadProfilesFromDisk();
 
@@ -150,6 +161,7 @@ namespace osu_trainer
             else
                 Properties.Settings.Default.BpmRate = BpmRate;
 
+            Properties.Settings.Default.OpenBeatmap = OpenBeatmap;
             Properties.Settings.Default.ChangePitch = ChangePitch;
             Properties.Settings.Default.NoSpinners = NoSpinners;
             Properties.Settings.Default.HighQualityMp3s = HighQualityMp3s;
@@ -243,7 +255,12 @@ namespace osu_trainer
         private void AddNewBeatmapToSongFolder(string songFolder, string newBeatmapFile, string newMp3)
         {
             // 1. Create osz (just a regular zip file with file ext. renamed to .osz)
-            string outputOsz = Path.GetFileNameWithoutExtension(songFolder) + ".osz";
+            string outputOsz = "Beatmaps\\" + Path.GetFileNameWithoutExtension(songFolder) + ".osz";
+            
+            // Create Beatmaps directory if does not exist
+            if (!Directory.Exists("Beatmaps\\"))
+                Directory.CreateDirectory("Beatmaps\\");
+
             if (File.Exists(outputOsz))
                 File.Delete(outputOsz);
             try
@@ -265,18 +282,25 @@ namespace osu_trainer
                 }
             }
             // 3. Run the .osz
-            Process proc = new Process();
-            proc.StartInfo.FileName = outputOsz;
-            proc.StartInfo.UseShellExecute = true;
-            try
+            if (OpenBeatmap)
             {
-                proc.Start();
+                Process proc = new Process();
+                proc.StartInfo.FileName = outputOsz;
+                proc.StartInfo.UseShellExecute = true;
+                try
+                {
+                    proc.Start();
+                }
+                catch
+                {
+                    MessageBox.Show("There was an error opening the generated .osz file. This is probably because .osz files have not been configured to open with osu!.exe on this system." + Environment.NewLine + Environment.NewLine +
+                        "To fix this, download any map from the website, right click the .osz file, click properties, beside Opens with... click Change..., and select osu!. " +
+                        "You'll know the problem is fixed when you can double click .osz files to open them with osu!", "Error");
+                }
             }
-            catch
+            else
             {
-                MessageBox.Show("There was an error opening the generated .osz file. This is probably because .osz files have not been configured to open with osu!.exe on this system." + Environment.NewLine + Environment.NewLine +
-                    "To fix this, download any map from the website, right click the .osz file, click properties, beside Opens with... click Change..., and select osu!. " +
-                    "You'll know the problem is fixed when you can double click .osz files to open them with osu!", "Error");
+                // Do nothing
             }
         }
 
@@ -536,6 +560,12 @@ namespace osu_trainer
 
             ScaleAR = false;
             BeatmapModified?.Invoke(this, EventArgs.Empty);
+            ControlsModified?.Invoke(this, EventArgs.Empty);
+        }
+
+        public void ToggleOpenBeatmap()
+        {
+            OpenBeatmap = !OpenBeatmap;
             ControlsModified?.Invoke(this, EventArgs.Empty);
         }
 

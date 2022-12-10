@@ -47,11 +47,13 @@ namespace osu_trainer
         private bool? gameLoaded = null;
         private bool mapSelectScreen = false;
 
+        private readonly int winHeight = 700; // 493
+
         public MainForm()
         {
             Directory.SetCurrentDirectory(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location));
             InitializeComponent();
-            Height = 493;
+            Height = winHeight;
 
             // Read version number from version.txt
             try
@@ -375,6 +377,7 @@ namespace osu_trainer
             ScaleARCheck.CheckedChanged            -= ScaleARCheck_CheckedChanged;
             highQualityMp3Check.CheckedChanged     -= highQualityCheckBox_CheckedChanged;
             updatesCheck.CheckedChanged            -= updatesCheck_CheckedChanged;
+            OpenBeatmapCheck.CheckedChanged        -= openBeatmapCheckBox_CheckedChanged;
 
             NoSpinnersCheck.Checked            = editor.NoSpinners;
             HRCheck.Checked                    = editor.ForceHardrockCirclesize;
@@ -383,6 +386,7 @@ namespace osu_trainer
             ScaleARCheck.Checked               = editor.ScaleAR;
             highQualityMp3Check.Checked        = editor.HighQualityMp3s;
             updatesCheck.Checked               = isCheckForUpdatesEnabled();
+            OpenBeatmapCheck.Checked           = editor.OpenBeatmap;
 
             NoSpinnersCheck.CheckedChanged         += NoSpinnerCheckBox_CheckedChanged;
             HRCheck.CheckedChanged                 += HRCheck_CheckedChanged;
@@ -391,6 +395,7 @@ namespace osu_trainer
             ScaleARCheck.CheckedChanged            += ScaleARCheck_CheckedChanged;
             highQualityMp3Check.CheckedChanged     += highQualityCheckBox_CheckedChanged;
             updatesCheck.CheckedChanged            += updatesCheck_CheckedChanged;
+            OpenBeatmapCheck.CheckedChanged        += openBeatmapCheckBox_CheckedChanged;
         }
 
         private void ToggleHpCsArOdDisplay(object sender, EventArgs e)
@@ -569,7 +574,6 @@ namespace osu_trainer
 #endregion Callbacks for updating GUI controls
 
 #region User input event handlers
-
         private void HpSlider_ValueChanged(object sender, EventArgs e) => editor.SetHP(HPSlider.Value);
 
         private void CsSlider_ValueChanged(object sender, EventArgs e) => editor.SetCS(CSSlider.Value);
@@ -594,6 +598,7 @@ namespace osu_trainer
         private void ChangePitchButton_CheckedChanged(object sender, EventArgs e) => editor.ToggleChangePitchSetting();
         private void NoSpinnerCheckBox_CheckedChanged(object sender, EventArgs e) => editor.ToggleNoSpinners();
         private void highQualityCheckBox_CheckedChanged(object sender, EventArgs e) => editor.ToggleHighQualityMp3s();
+        private void openBeatmapCheckBox_CheckedChanged(object sender, EventArgs e) => editor.ToggleOpenBeatmap();
 
         private void BpmMultiplierTextBox_Submit(object sender, EventArgs e)
         {
@@ -879,13 +884,34 @@ namespace osu_trainer
         private void profileButton2_Click(object sender, EventArgs e) => editor.LoadProfile(1);
         private void profileButton3_Click(object sender, EventArgs e) => editor.LoadProfile(2);
         private void profileButton4_Click(object sender, EventArgs e) => editor.LoadProfile(3);
+        private void profileButton5_Click(object sender, EventArgs e) => editor.LoadProfile(4);
+        private void profileButton6_Click(object sender, EventArgs e) => editor.LoadProfile(5);
+        private void profileButton7_Click(object sender, EventArgs e) => editor.LoadProfile(6);
+        private void profileButton8_Click(object sender, EventArgs e) => editor.LoadProfile(7);
+        private void profileButton9_Click(object sender, EventArgs e) => editor.LoadProfile(8);
+        private void profileButton10_Click(object sender, EventArgs e) => editor.LoadProfile(9);
+        private void profileButton11_Click(object sender, EventArgs e) => editor.LoadProfile(10);
+        private void profileButton12_Click(object sender, EventArgs e) => editor.LoadProfile(11);
+
+
         private void saveButton1_Click(object sender, EventArgs e) => saveButtonClick(0);
         private void saveButton2_Click(object sender, EventArgs e) => saveButtonClick(1);
         private void saveButton3_Click(object sender, EventArgs e) => saveButtonClick(2);
         private void saveButton4_Click(object sender, EventArgs e) => saveButtonClick(3);
+        private void saveButton5_Click(object sender, EventArgs e) => saveButtonClick(4);
+        private void saveButton6_Click(object sender, EventArgs e) => saveButtonClick(5);
+        private void saveButton7_Click(object sender, EventArgs e) => saveButtonClick(6);
+        private void saveButton8_Click(object sender, EventArgs e) => saveButtonClick(7);
+        private void saveButton9_Click(object sender, EventArgs e) => saveButtonClick(8);
+        private void saveButton10_Click(object sender, EventArgs e) => saveButtonClick(9);
+        private void saveButton11_Click(object sender, EventArgs e) => saveButtonClick(10);
+        private void saveButton12_Click(object sender, EventArgs e) => saveButtonClick(11);
+
         private void saveButtonClick(int whichProfile)
         {
-            var saveButtons = new List<Button>() { saveButton1, saveButton2, saveButton3, saveButton4 };
+            var saveButtons = new List<Button>() { saveButton1, saveButton2, saveButton3, saveButton4,
+                                                   saveButton5, saveButton6, saveButton7, saveButton8,
+                                                   saveButton9, saveButton10, saveButton11, saveButton12, };
             saveButtons[whichProfile].ForeColor = Color.White;
             saveButtons[whichProfile].Text = "Saved!";
             saveButtonHighlight[whichProfile] = 1.0M;
@@ -895,6 +921,15 @@ namespace osu_trainer
         private void renameButton2_Click(object sender, EventArgs e) => renameProfileClick(1);
         private void renameButton3_Click(object sender, EventArgs e) => renameProfileClick(2);
         private void renameButton4_Click(object sender, EventArgs e) => renameProfileClick(3);
+        private void renameButton5_Click(object sender, EventArgs e) => renameProfileClick(4);
+        private void renameButton6_Click(object sender, EventArgs e) => renameProfileClick(5);
+        private void renameButton7_Click(object sender, EventArgs e) => renameProfileClick(6);
+        private void renameButton8_Click(object sender, EventArgs e) => renameProfileClick(7);
+        private void renameButton9_Click(object sender, EventArgs e) => renameProfileClick(8);
+        private void renameButton10_Click(object sender, EventArgs e) => renameProfileClick(9);
+        private void renameButton11_Click(object sender, EventArgs e) => renameProfileClick(10);
+        private void renameButton12_Click(object sender, EventArgs e) => renameProfileClick(11);
+
         private void renameProfileClick(int whichProfile)
         {
             var popup = new RenameProfileForm(Cursor.Position.X - 83, Cursor.Position.Y - 15);
@@ -908,19 +943,53 @@ namespace osu_trainer
             profileButton2.Visible = profilesVisible;
             profileButton3.Visible = profilesVisible;
             profileButton4.Visible = profilesVisible;
+            profileButton5.Visible = profilesVisible;
+            profileButton6.Visible = profilesVisible;
+            profileButton7.Visible = profilesVisible;
+            profileButton8.Visible = profilesVisible;
+            profileButton9.Visible = profilesVisible;
+            profileButton10.Visible = profilesVisible;
+            profileButton11.Visible = profilesVisible;
+            profileButton12.Visible = profilesVisible;
+
             saveButton1.Visible = profilesVisible;
             saveButton2.Visible = profilesVisible;
             saveButton3.Visible = profilesVisible;
             saveButton4.Visible = profilesVisible;
+            saveButton5.Visible = profilesVisible;
+            saveButton6.Visible = profilesVisible;
+            saveButton7.Visible = profilesVisible;
+            saveButton8.Visible = profilesVisible;
+            saveButton9.Visible = profilesVisible;
+            saveButton10.Visible = profilesVisible;
+            saveButton11.Visible = profilesVisible;
+            saveButton12.Visible = profilesVisible;
+
             renameButton1.Visible = profilesVisible;
             renameButton2.Visible = profilesVisible;
             renameButton3.Visible = profilesVisible;
             renameButton4.Visible = profilesVisible;
+            renameButton5.Visible = profilesVisible;
+            renameButton6.Visible = profilesVisible;
+            renameButton7.Visible = profilesVisible;
+            renameButton8.Visible = profilesVisible;
+            renameButton9.Visible = profilesVisible;
+            renameButton10.Visible = profilesVisible;
+            renameButton11.Visible = profilesVisible;
+            renameButton12.Visible = profilesVisible;
 
             profileButton1.Text = editor.UserProfiles[0].Name;
             profileButton2.Text = editor.UserProfiles[1].Name;
             profileButton3.Text = editor.UserProfiles[2].Name;
             profileButton4.Text = editor.UserProfiles[3].Name;
+            profileButton5.Text = editor.UserProfiles[4].Name;
+            profileButton6.Text = editor.UserProfiles[5].Name;
+            profileButton7.Text = editor.UserProfiles[6].Name;
+            profileButton8.Text = editor.UserProfiles[7].Name;
+            profileButton9.Text = editor.UserProfiles[8].Name;
+            profileButton10.Text = editor.UserProfiles[9].Name;
+            profileButton11.Text = editor.UserProfiles[10].Name;
+            profileButton12.Text = editor.UserProfiles[11].Name;
         }
         private void ProfileHotkeyHandler(object sender, EventArgs e)
         {
@@ -947,13 +1016,15 @@ namespace osu_trainer
             }
         }
 
-        private List<decimal> saveButtonHighlight = new List<decimal>() { 0, 0, 0, 0 };
+        private List<decimal> saveButtonHighlight = Enumerable.Repeat(0M, 12).ToList();// new List<decimal>();
         const decimal HIGHLIGHT_FADE = 0.03M;
         private void formAnimationTimer_Tick(object sender, EventArgs e)
         {
             Color startBackColor = Color.FromArgb(71, 115, 66);
             Color endBackColor = Color.FromArgb(45, 42, 63);
-            var saveButtons = new List<Button>() { saveButton1, saveButton2, saveButton3, saveButton4 };
+            var saveButtons = new List<Button>() { saveButton1, saveButton2, saveButton3, saveButton4,
+                                                   saveButton5, saveButton6, saveButton7, saveButton8,
+                                                   saveButton9, saveButton10, saveButton11, saveButton12, };
             for (int i = 0; i < saveButtons.Count; i++)
             {
                 // linearly interpolate colour
@@ -984,16 +1055,19 @@ namespace osu_trainer
             if (!profilesVisible)
             {
                 // not ready layout
-                middlePanel.Height = 110;
-                BottomPanel.Height = 111;
-                Height = 493 + (extrasPanel.Visible ? extrasPanel.Height : 0);
+                
+                //middlePanel.Height = 110;
+                //BottomPanel.Height = 111;
+                Height = winHeight + (extrasPanel.Visible ? extrasPanel.Height : 0);
+                Height += (SongsFolderButton.Visible ? SongsFolderButton.Height : 0);
             }
             else
             {
                 // ready layout
-                middlePanel.Height = 178;
-                BottomPanel.Height = 111 - 33;
-                Height = 531 + (extrasPanel.Visible ? extrasPanel.Height : 0);
+                //middlePanel.Height = 178;
+                //BottomPanel.Height = 111 - 33;
+                Height = winHeight + (extrasPanel.Visible ? extrasPanel.Height : 0);
+                Height -= (SongsFolderButton.Visible ? SongsFolderButton.Height : 0);
             }
         }
         private void showExtrasButton_Click(object sender, EventArgs e)
@@ -1072,10 +1146,6 @@ namespace osu_trainer
                 return;
             }
             return;
-        }
-
-        private void spectrogramButton_Click(object sender, EventArgs e)
-        {
         }
     }
 }

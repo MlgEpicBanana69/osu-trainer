@@ -68,5 +68,8 @@
     <Setting Name="BpmRate" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">1</Value>
     </Setting>
+    <Setting Name="OpenBeatmap" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
