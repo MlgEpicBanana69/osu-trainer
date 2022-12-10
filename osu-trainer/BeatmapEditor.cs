@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
@@ -255,7 +256,11 @@ namespace osu_trainer
         private void AddNewBeatmapToSongFolder(string songFolder, string newBeatmapFile, string newMp3)
         {
             // 1. Create osz (just a regular zip file with file ext. renamed to .osz)
-            string outputOsz = "Beatmaps\\" + Path.GetFileNameWithoutExtension(songFolder) + ".osz";
+            // We want to distinguise between song difficulties to allow difficulties
+            // of the same mapset to coexist within the Beatmaps folder
+            string song_id = Path.GetFileNameWithoutExtension(songFolder).Split(' ')[0];
+            string beatmap_filename = Path.GetFileNameWithoutExtension(newBeatmapFile);
+            string outputOsz = $"Beatmaps\\{song_id} {beatmap_filename}.osz";
             
             // Create Beatmaps directory if does not exist
             if (!Directory.Exists("Beatmaps\\"))
