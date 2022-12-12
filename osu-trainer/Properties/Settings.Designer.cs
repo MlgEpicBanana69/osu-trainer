@@ -286,17 +286,5 @@ namespace osu_trainer.Properties {
                 this["BpmRate"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool OpenBeatmap {
-            get {
-                return ((bool)(this["OpenBeatmap"]));
-            }
-            set {
-                this["OpenBeatmap"] = value;
-            }
-        }
     }
 }

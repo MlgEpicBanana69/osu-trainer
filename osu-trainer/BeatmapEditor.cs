@@ -127,6 +127,8 @@ namespace osu_trainer
             lockedAR = Properties.Settings.Default.LockedARSetting;
             lockedOD = Properties.Settings.Default.LockedODSetting;
 
+            OpenBeatmap = true;
+
             BpmIsLocked = Properties.Settings.Default.BpmLockedState;
             if (BpmIsLocked)
                 lockedBpm = Properties.Settings.Default.LockedBpmSetting;
@@ -136,7 +138,6 @@ namespace osu_trainer
             ChangePitch = Properties.Settings.Default.ChangePitch;
             NoSpinners = Properties.Settings.Default.NoSpinners;
             HighQualityMp3s = Properties.Settings.Default.HighQualityMp3s;
-            OpenBeatmap = Properties.Settings.Default.OpenBeatmap;
 
             LoadProfilesFromDisk();
 
@@ -162,7 +163,6 @@ namespace osu_trainer
             else
                 Properties.Settings.Default.BpmRate = BpmRate;
 
-            Properties.Settings.Default.OpenBeatmap = OpenBeatmap;
             Properties.Settings.Default.ChangePitch = ChangePitch;
             Properties.Settings.Default.NoSpinners = NoSpinners;
             Properties.Settings.Default.HighQualityMp3s = HighQualityMp3s;

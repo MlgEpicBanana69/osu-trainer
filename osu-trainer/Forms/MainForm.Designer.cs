@@ -34,11 +34,7 @@ namespace osu_trainer
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.BeatmapUpdateTimer = new System.Windows.Forms.Timer(this.components);
             this.middlePanel = new System.Windows.Forms.Panel();
-            this.profileButton12 = new osu_trainer.Controls.OsuButton();
-            this.profileButton11 = new osu_trainer.Controls.OsuButton();
-            this.profileButton10 = new osu_trainer.Controls.OsuButton();
             this.saveButton12 = new System.Windows.Forms.Button();
-            this.profileButton9 = new osu_trainer.Controls.OsuButton();
             this.saveButton11 = new System.Windows.Forms.Button();
             this.saveButton10 = new System.Windows.Forms.Button();
             this.saveButton9 = new System.Windows.Forms.Button();
@@ -46,11 +42,7 @@ namespace osu_trainer
             this.renameButton11 = new System.Windows.Forms.Button();
             this.renameButton10 = new System.Windows.Forms.Button();
             this.renameButton9 = new System.Windows.Forms.Button();
-            this.profileButton8 = new osu_trainer.Controls.OsuButton();
-            this.profileButton7 = new osu_trainer.Controls.OsuButton();
-            this.profileButton6 = new osu_trainer.Controls.OsuButton();
             this.saveButton8 = new System.Windows.Forms.Button();
-            this.profileButton5 = new osu_trainer.Controls.OsuButton();
             this.saveButton7 = new System.Windows.Forms.Button();
             this.saveButton6 = new System.Windows.Forms.Button();
             this.saveButton5 = new System.Windows.Forms.Button();
@@ -59,56 +51,27 @@ namespace osu_trainer
             this.renameButton6 = new System.Windows.Forms.Button();
             this.renameButton5 = new System.Windows.Forms.Button();
             this.showExtrasButton = new System.Windows.Forms.Button();
-            this.profileButton4 = new osu_trainer.Controls.OsuButton();
-            this.profileButton3 = new osu_trainer.Controls.OsuButton();
-            this.profileButton2 = new osu_trainer.Controls.OsuButton();
             this.saveButton4 = new System.Windows.Forms.Button();
-            this.profileButton1 = new osu_trainer.Controls.OsuButton();
             this.saveButton3 = new System.Windows.Forms.Button();
             this.saveButton2 = new System.Windows.Forms.Button();
             this.saveButton1 = new System.Windows.Forms.Button();
-            this.BpmLockCheck = new osu_trainer.Controls.ToggleIconButton();
-            this.BpmSlider = new osu_trainer.OptionSlider();
-            this.HRCheck = new osu_trainer.Controls.OsuCheckBox();
-            this.ScaleODCheck = new osu_trainer.Controls.OsuCheckBox();
-            this.ScaleARCheck = new osu_trainer.Controls.OsuCheckBox();
             this.BpmMultiplierTextBox = new System.Windows.Forms.TextBox();
-            this.NewBpmTextBox = new osu_trainer.Controls.ScrollableTextBox();
             this.NewBpmRangeTextBox = new System.Windows.Forms.TextBox();
             this.OriginalBpmRangeTextBox = new System.Windows.Forms.TextBox();
             this.OriginalBpmTextBox = new System.Windows.Forms.TextBox();
             this.renameButton4 = new System.Windows.Forms.Button();
-            this.OriginalBpmLabel = new osu_trainer.Controls.AntiAliasedLabel();
             this.renameButton3 = new System.Windows.Forms.Button();
-            this.NewBpmLabel = new osu_trainer.Controls.AntiAliasedLabel();
             this.renameButton2 = new System.Windows.Forms.Button();
-            this.BpmMultiplierLabel = new osu_trainer.Controls.AntiAliasedLabel();
             this.renameButton1 = new System.Windows.Forms.Button();
             this.editHotkeysButton = new System.Windows.Forms.Button();
             this.Middle1Panel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.ODLockCheck = new osu_trainer.Controls.ToggleIconButton();
-            this.ARLockCheck = new osu_trainer.Controls.ToggleIconButton();
-            this.CSLockCheck = new osu_trainer.Controls.ToggleIconButton();
-            this.odlabel = new osu_trainer.Controls.AntiAliasedLabel();
             this.ODDisplay = new System.Windows.Forms.TextBox();
-            this.ODSlider = new osu_trainer.OptionSlider();
-            this.arlabel = new osu_trainer.Controls.AntiAliasedLabel();
             this.ARDisplay = new System.Windows.Forms.TextBox();
-            this.ARSlider = new osu_trainer.OptionSlider();
-            this.cslabel = new osu_trainer.Controls.AntiAliasedLabel();
             this.CSDisplay = new System.Windows.Forms.TextBox();
-            this.CSSlider = new osu_trainer.OptionSlider();
-            this.hplabel = new osu_trainer.Controls.AntiAliasedLabel();
             this.HPDisplay = new System.Windows.Forms.TextBox();
-            this.HPSlider = new osu_trainer.OptionSlider();
-            this.HPLockCheck = new osu_trainer.Controls.ToggleIconButton();
             this.BottomPanel = new System.Windows.Forms.Panel();
-            this.ResetButton = new osu_trainer.Controls.OsuButton();
-            this.GenerateMapButton = new osu_trainer.Controls.OsuButton();
-            this.SongsFolderButton = new osu_trainer.Controls.OsuButton();
             this.TopPanel = new System.Windows.Forms.Panel();
-            this.SongDisplay = new osu_trainer.Controls.SongDisplay();
             this.OsuRunningTimer = new System.Windows.Forms.Timer(this.components);
             this.closeButton = new System.Windows.Forms.Button();
             this.minimizeButton = new System.Windows.Forms.Button();
@@ -116,12 +79,49 @@ namespace osu_trainer
             this.BackgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.formAnimationTimer = new System.Windows.Forms.Timer(this.components);
             this.extrasPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.OpenBeatmapCheck = new osu_trainer.Controls.OsuCheckBox();
             this.ChangePitchCheck = new osu_trainer.Controls.OsuCheckBox();
             this.highQualityMp3Check = new osu_trainer.Controls.OsuCheckBox();
             this.NoSpinnersCheck = new osu_trainer.Controls.OsuCheckBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.updatesCheck = new osu_trainer.Controls.OsuCheckBox();
+            this.profileButton12 = new osu_trainer.Controls.OsuButton();
+            this.profileButton11 = new osu_trainer.Controls.OsuButton();
+            this.profileButton10 = new osu_trainer.Controls.OsuButton();
+            this.profileButton9 = new osu_trainer.Controls.OsuButton();
+            this.profileButton8 = new osu_trainer.Controls.OsuButton();
+            this.profileButton7 = new osu_trainer.Controls.OsuButton();
+            this.profileButton6 = new osu_trainer.Controls.OsuButton();
+            this.profileButton5 = new osu_trainer.Controls.OsuButton();
+            this.profileButton4 = new osu_trainer.Controls.OsuButton();
+            this.profileButton3 = new osu_trainer.Controls.OsuButton();
+            this.profileButton2 = new osu_trainer.Controls.OsuButton();
+            this.profileButton1 = new osu_trainer.Controls.OsuButton();
+            this.BpmLockCheck = new osu_trainer.Controls.ToggleIconButton();
+            this.BpmSlider = new osu_trainer.OptionSlider();
+            this.HRCheck = new osu_trainer.Controls.OsuCheckBox();
+            this.ScaleODCheck = new osu_trainer.Controls.OsuCheckBox();
+            this.ScaleARCheck = new osu_trainer.Controls.OsuCheckBox();
+            this.NewBpmTextBox = new osu_trainer.Controls.ScrollableTextBox();
+            this.OriginalBpmLabel = new osu_trainer.Controls.AntiAliasedLabel();
+            this.NewBpmLabel = new osu_trainer.Controls.AntiAliasedLabel();
+            this.BpmMultiplierLabel = new osu_trainer.Controls.AntiAliasedLabel();
+            this.ODLockCheck = new osu_trainer.Controls.ToggleIconButton();
+            this.ARLockCheck = new osu_trainer.Controls.ToggleIconButton();
+            this.CSLockCheck = new osu_trainer.Controls.ToggleIconButton();
+            this.odlabel = new osu_trainer.Controls.AntiAliasedLabel();
+            this.ODSlider = new osu_trainer.OptionSlider();
+            this.arlabel = new osu_trainer.Controls.AntiAliasedLabel();
+            this.ARSlider = new osu_trainer.OptionSlider();
+            this.cslabel = new osu_trainer.Controls.AntiAliasedLabel();
+            this.CSSlider = new osu_trainer.OptionSlider();
+            this.hplabel = new osu_trainer.Controls.AntiAliasedLabel();
+            this.HPSlider = new osu_trainer.OptionSlider();
+            this.HPLockCheck = new osu_trainer.Controls.ToggleIconButton();
+            this.ResetButton = new osu_trainer.Controls.OsuButton();
+            this.GenerateMapButton = new osu_trainer.Controls.OsuButton();
+            this.SongsFolderButton = new osu_trainer.Controls.OsuButton();
+            this.SongDisplay = new osu_trainer.Controls.SongDisplay();
             this.middlePanel.SuspendLayout();
             this.Middle1Panel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -196,66 +196,6 @@ namespace osu_trainer
             this.middlePanel.TabIndex = 7;
             this.middlePanel.Click += new System.EventHandler(this.Unfocus);
             // 
-            // profileButton12
-            // 
-            this.profileButton12.BrightnessRange = 0.01F;
-            this.profileButton12.Color = System.Drawing.Color.MediumPurple;
-            this.profileButton12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profileButton12.ForeColor = System.Drawing.Color.White;
-            this.profileButton12.Location = new System.Drawing.Point(316, 224);
-            this.profileButton12.Name = "profileButton12";
-            this.profileButton12.Progress = 0F;
-            this.profileButton12.ProgressColor = System.Drawing.Color.Transparent;
-            this.profileButton12.Size = new System.Drawing.Size(96, 24);
-            this.profileButton12.Subtext = "";
-            this.profileButton12.SubtextColor = System.Drawing.Color.Empty;
-            this.profileButton12.TabIndex = 39;
-            this.profileButton12.Text = "Profile 12";
-            this.profileButton12.TextYOffset = 0;
-            this.profileButton12.TriangleCount = 30;
-            this.profileButton12.UseVisualStyleBackColor = true;
-            this.profileButton12.Click += new System.EventHandler(this.profileButton12_Click);
-            // 
-            // profileButton11
-            // 
-            this.profileButton11.BrightnessRange = 0.01F;
-            this.profileButton11.Color = System.Drawing.Color.MediumPurple;
-            this.profileButton11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profileButton11.ForeColor = System.Drawing.Color.White;
-            this.profileButton11.Location = new System.Drawing.Point(214, 224);
-            this.profileButton11.Name = "profileButton11";
-            this.profileButton11.Progress = 0F;
-            this.profileButton11.ProgressColor = System.Drawing.Color.Transparent;
-            this.profileButton11.Size = new System.Drawing.Size(96, 24);
-            this.profileButton11.Subtext = "";
-            this.profileButton11.SubtextColor = System.Drawing.Color.Empty;
-            this.profileButton11.TabIndex = 40;
-            this.profileButton11.Text = "Profile 11";
-            this.profileButton11.TextYOffset = 0;
-            this.profileButton11.TriangleCount = 30;
-            this.profileButton11.UseVisualStyleBackColor = true;
-            this.profileButton11.Click += new System.EventHandler(this.profileButton11_Click);
-            // 
-            // profileButton10
-            // 
-            this.profileButton10.BrightnessRange = 0.01F;
-            this.profileButton10.Color = System.Drawing.Color.MediumPurple;
-            this.profileButton10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profileButton10.ForeColor = System.Drawing.Color.White;
-            this.profileButton10.Location = new System.Drawing.Point(112, 224);
-            this.profileButton10.Name = "profileButton10";
-            this.profileButton10.Progress = 0F;
-            this.profileButton10.ProgressColor = System.Drawing.Color.Transparent;
-            this.profileButton10.Size = new System.Drawing.Size(96, 24);
-            this.profileButton10.Subtext = "";
-            this.profileButton10.SubtextColor = System.Drawing.Color.Empty;
-            this.profileButton10.TabIndex = 41;
-            this.profileButton10.Text = "Profile 10";
-            this.profileButton10.TextYOffset = 0;
-            this.profileButton10.TriangleCount = 30;
-            this.profileButton10.UseVisualStyleBackColor = true;
-            this.profileButton10.Click += new System.EventHandler(this.profileButton10_Click);
-            // 
             // saveButton12
             // 
             this.saveButton12.FlatAppearance.BorderSize = 0;
@@ -269,26 +209,6 @@ namespace osu_trainer
             this.saveButton12.Text = "Save";
             this.saveButton12.UseVisualStyleBackColor = true;
             this.saveButton12.Click += new System.EventHandler(this.saveButton12_Click);
-            // 
-            // profileButton9
-            // 
-            this.profileButton9.BrightnessRange = 0.01F;
-            this.profileButton9.Color = System.Drawing.Color.MediumPurple;
-            this.profileButton9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profileButton9.ForeColor = System.Drawing.Color.White;
-            this.profileButton9.Location = new System.Drawing.Point(10, 224);
-            this.profileButton9.Name = "profileButton9";
-            this.profileButton9.Progress = 0F;
-            this.profileButton9.ProgressColor = System.Drawing.Color.Transparent;
-            this.profileButton9.Size = new System.Drawing.Size(96, 24);
-            this.profileButton9.Subtext = "";
-            this.profileButton9.SubtextColor = System.Drawing.Color.Empty;
-            this.profileButton9.TabIndex = 42;
-            this.profileButton9.Text = "Profile 9";
-            this.profileButton9.TextYOffset = 0;
-            this.profileButton9.TriangleCount = 30;
-            this.profileButton9.UseVisualStyleBackColor = true;
-            this.profileButton9.Click += new System.EventHandler(this.profileButton9_Click);
             // 
             // saveButton11
             // 
@@ -389,66 +309,6 @@ namespace osu_trainer
             this.renameButton9.UseVisualStyleBackColor = true;
             this.renameButton9.Click += new System.EventHandler(this.renameButton9_Click);
             // 
-            // profileButton8
-            // 
-            this.profileButton8.BrightnessRange = 0.01F;
-            this.profileButton8.Color = System.Drawing.Color.MediumPurple;
-            this.profileButton8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profileButton8.ForeColor = System.Drawing.Color.White;
-            this.profileButton8.Location = new System.Drawing.Point(316, 158);
-            this.profileButton8.Name = "profileButton8";
-            this.profileButton8.Progress = 0F;
-            this.profileButton8.ProgressColor = System.Drawing.Color.Transparent;
-            this.profileButton8.Size = new System.Drawing.Size(96, 24);
-            this.profileButton8.Subtext = "";
-            this.profileButton8.SubtextColor = System.Drawing.Color.Empty;
-            this.profileButton8.TabIndex = 27;
-            this.profileButton8.Text = "Profile 8";
-            this.profileButton8.TextYOffset = 0;
-            this.profileButton8.TriangleCount = 30;
-            this.profileButton8.UseVisualStyleBackColor = true;
-            this.profileButton8.Click += new System.EventHandler(this.profileButton8_Click);
-            // 
-            // profileButton7
-            // 
-            this.profileButton7.BrightnessRange = 0.01F;
-            this.profileButton7.Color = System.Drawing.Color.MediumPurple;
-            this.profileButton7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profileButton7.ForeColor = System.Drawing.Color.White;
-            this.profileButton7.Location = new System.Drawing.Point(214, 158);
-            this.profileButton7.Name = "profileButton7";
-            this.profileButton7.Progress = 0F;
-            this.profileButton7.ProgressColor = System.Drawing.Color.Transparent;
-            this.profileButton7.Size = new System.Drawing.Size(96, 24);
-            this.profileButton7.Subtext = "";
-            this.profileButton7.SubtextColor = System.Drawing.Color.Empty;
-            this.profileButton7.TabIndex = 28;
-            this.profileButton7.Text = "Profile 7";
-            this.profileButton7.TextYOffset = 0;
-            this.profileButton7.TriangleCount = 30;
-            this.profileButton7.UseVisualStyleBackColor = true;
-            this.profileButton7.Click += new System.EventHandler(this.profileButton7_Click);
-            // 
-            // profileButton6
-            // 
-            this.profileButton6.BrightnessRange = 0.01F;
-            this.profileButton6.Color = System.Drawing.Color.MediumPurple;
-            this.profileButton6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profileButton6.ForeColor = System.Drawing.Color.White;
-            this.profileButton6.Location = new System.Drawing.Point(112, 158);
-            this.profileButton6.Name = "profileButton6";
-            this.profileButton6.Progress = 0F;
-            this.profileButton6.ProgressColor = System.Drawing.Color.Transparent;
-            this.profileButton6.Size = new System.Drawing.Size(96, 24);
-            this.profileButton6.Subtext = "";
-            this.profileButton6.SubtextColor = System.Drawing.Color.Empty;
-            this.profileButton6.TabIndex = 29;
-            this.profileButton6.Text = "Profile 6";
-            this.profileButton6.TextYOffset = 0;
-            this.profileButton6.TriangleCount = 30;
-            this.profileButton6.UseVisualStyleBackColor = true;
-            this.profileButton6.Click += new System.EventHandler(this.profileButton6_Click);
-            // 
             // saveButton8
             // 
             this.saveButton8.FlatAppearance.BorderSize = 0;
@@ -462,26 +322,6 @@ namespace osu_trainer
             this.saveButton8.Text = "Save";
             this.saveButton8.UseVisualStyleBackColor = true;
             this.saveButton8.Click += new System.EventHandler(this.saveButton8_Click);
-            // 
-            // profileButton5
-            // 
-            this.profileButton5.BrightnessRange = 0.01F;
-            this.profileButton5.Color = System.Drawing.Color.MediumPurple;
-            this.profileButton5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profileButton5.ForeColor = System.Drawing.Color.White;
-            this.profileButton5.Location = new System.Drawing.Point(10, 158);
-            this.profileButton5.Name = "profileButton5";
-            this.profileButton5.Progress = 0F;
-            this.profileButton5.ProgressColor = System.Drawing.Color.Transparent;
-            this.profileButton5.Size = new System.Drawing.Size(96, 24);
-            this.profileButton5.Subtext = "";
-            this.profileButton5.SubtextColor = System.Drawing.Color.Empty;
-            this.profileButton5.TabIndex = 30;
-            this.profileButton5.Text = "Profile 5";
-            this.profileButton5.TextYOffset = 0;
-            this.profileButton5.TriangleCount = 30;
-            this.profileButton5.UseVisualStyleBackColor = true;
-            this.profileButton5.Click += new System.EventHandler(this.profileButton5_Click);
             // 
             // saveButton7
             // 
@@ -599,66 +439,6 @@ namespace osu_trainer
             this.showExtrasButton.UseVisualStyleBackColor = false;
             this.showExtrasButton.Click += new System.EventHandler(this.showExtrasButton_Click);
             // 
-            // profileButton4
-            // 
-            this.profileButton4.BrightnessRange = 0.01F;
-            this.profileButton4.Color = System.Drawing.Color.MediumPurple;
-            this.profileButton4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profileButton4.ForeColor = System.Drawing.Color.White;
-            this.profileButton4.Location = new System.Drawing.Point(316, 92);
-            this.profileButton4.Name = "profileButton4";
-            this.profileButton4.Progress = 0F;
-            this.profileButton4.ProgressColor = System.Drawing.Color.Transparent;
-            this.profileButton4.Size = new System.Drawing.Size(96, 24);
-            this.profileButton4.Subtext = "";
-            this.profileButton4.SubtextColor = System.Drawing.Color.Empty;
-            this.profileButton4.TabIndex = 24;
-            this.profileButton4.Text = "Profile 4";
-            this.profileButton4.TextYOffset = 0;
-            this.profileButton4.TriangleCount = 30;
-            this.profileButton4.UseVisualStyleBackColor = true;
-            this.profileButton4.Click += new System.EventHandler(this.profileButton4_Click);
-            // 
-            // profileButton3
-            // 
-            this.profileButton3.BrightnessRange = 0.01F;
-            this.profileButton3.Color = System.Drawing.Color.MediumPurple;
-            this.profileButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profileButton3.ForeColor = System.Drawing.Color.White;
-            this.profileButton3.Location = new System.Drawing.Point(214, 92);
-            this.profileButton3.Name = "profileButton3";
-            this.profileButton3.Progress = 0F;
-            this.profileButton3.ProgressColor = System.Drawing.Color.Transparent;
-            this.profileButton3.Size = new System.Drawing.Size(96, 24);
-            this.profileButton3.Subtext = "";
-            this.profileButton3.SubtextColor = System.Drawing.Color.Empty;
-            this.profileButton3.TabIndex = 24;
-            this.profileButton3.Text = "Profile 3";
-            this.profileButton3.TextYOffset = 0;
-            this.profileButton3.TriangleCount = 30;
-            this.profileButton3.UseVisualStyleBackColor = true;
-            this.profileButton3.Click += new System.EventHandler(this.profileButton3_Click);
-            // 
-            // profileButton2
-            // 
-            this.profileButton2.BrightnessRange = 0.01F;
-            this.profileButton2.Color = System.Drawing.Color.MediumPurple;
-            this.profileButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profileButton2.ForeColor = System.Drawing.Color.White;
-            this.profileButton2.Location = new System.Drawing.Point(112, 92);
-            this.profileButton2.Name = "profileButton2";
-            this.profileButton2.Progress = 0F;
-            this.profileButton2.ProgressColor = System.Drawing.Color.Transparent;
-            this.profileButton2.Size = new System.Drawing.Size(96, 24);
-            this.profileButton2.Subtext = "";
-            this.profileButton2.SubtextColor = System.Drawing.Color.Empty;
-            this.profileButton2.TabIndex = 24;
-            this.profileButton2.Text = "Profile 2";
-            this.profileButton2.TextYOffset = 0;
-            this.profileButton2.TriangleCount = 30;
-            this.profileButton2.UseVisualStyleBackColor = true;
-            this.profileButton2.Click += new System.EventHandler(this.profileButton2_Click);
-            // 
             // saveButton4
             // 
             this.saveButton4.FlatAppearance.BorderSize = 0;
@@ -672,26 +452,6 @@ namespace osu_trainer
             this.saveButton4.Text = "Save";
             this.saveButton4.UseVisualStyleBackColor = true;
             this.saveButton4.Click += new System.EventHandler(this.saveButton4_Click);
-            // 
-            // profileButton1
-            // 
-            this.profileButton1.BrightnessRange = 0.01F;
-            this.profileButton1.Color = System.Drawing.Color.MediumPurple;
-            this.profileButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profileButton1.ForeColor = System.Drawing.Color.White;
-            this.profileButton1.Location = new System.Drawing.Point(10, 92);
-            this.profileButton1.Name = "profileButton1";
-            this.profileButton1.Progress = 0F;
-            this.profileButton1.ProgressColor = System.Drawing.Color.Transparent;
-            this.profileButton1.Size = new System.Drawing.Size(96, 24);
-            this.profileButton1.Subtext = "";
-            this.profileButton1.SubtextColor = System.Drawing.Color.Empty;
-            this.profileButton1.TabIndex = 24;
-            this.profileButton1.Text = "Profile 1";
-            this.profileButton1.TextYOffset = 0;
-            this.profileButton1.TriangleCount = 30;
-            this.profileButton1.UseVisualStyleBackColor = true;
-            this.profileButton1.Click += new System.EventHandler(this.profileButton1_Click);
             // 
             // saveButton3
             // 
@@ -734,6 +494,701 @@ namespace osu_trainer
             this.saveButton1.Text = "Save";
             this.saveButton1.UseVisualStyleBackColor = true;
             this.saveButton1.Click += new System.EventHandler(this.saveButton1_Click);
+            // 
+            // BpmMultiplierTextBox
+            // 
+            this.BpmMultiplierTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(16)))), ((int)(((byte)(25)))));
+            this.BpmMultiplierTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BpmMultiplierTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BpmMultiplierTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BpmMultiplierTextBox.Location = new System.Drawing.Point(90, 5);
+            this.BpmMultiplierTextBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.BpmMultiplierTextBox.Name = "BpmMultiplierTextBox";
+            this.BpmMultiplierTextBox.Size = new System.Drawing.Size(42, 20);
+            this.BpmMultiplierTextBox.TabIndex = 10;
+            this.BpmMultiplierTextBox.Text = "1.00";
+            this.BpmMultiplierTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BpmMultiplierTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.BpmMultiplierTextBox_KeyDown);
+            this.BpmMultiplierTextBox.Leave += new System.EventHandler(this.BpmMultiplierTextBox_Submit);
+            // 
+            // NewBpmRangeTextBox
+            // 
+            this.NewBpmRangeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(35)))), ((int)(((byte)(53)))));
+            this.NewBpmRangeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NewBpmRangeTextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewBpmRangeTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(134)))));
+            this.NewBpmRangeTextBox.Location = new System.Drawing.Point(163, 64);
+            this.NewBpmRangeTextBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.NewBpmRangeTextBox.Name = "NewBpmRangeTextBox";
+            this.NewBpmRangeTextBox.ReadOnly = true;
+            this.NewBpmRangeTextBox.Size = new System.Drawing.Size(85, 18);
+            this.NewBpmRangeTextBox.TabIndex = 10;
+            this.NewBpmRangeTextBox.Text = "(180 - 210)";
+            // 
+            // OriginalBpmRangeTextBox
+            // 
+            this.OriginalBpmRangeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(35)))), ((int)(((byte)(53)))));
+            this.OriginalBpmRangeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.OriginalBpmRangeTextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OriginalBpmRangeTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(134)))));
+            this.OriginalBpmRangeTextBox.Location = new System.Drawing.Point(163, 35);
+            this.OriginalBpmRangeTextBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.OriginalBpmRangeTextBox.Name = "OriginalBpmRangeTextBox";
+            this.OriginalBpmRangeTextBox.ReadOnly = true;
+            this.OriginalBpmRangeTextBox.Size = new System.Drawing.Size(85, 18);
+            this.OriginalBpmRangeTextBox.TabIndex = 20;
+            this.OriginalBpmRangeTextBox.Text = "(180 - 210)";
+            // 
+            // OriginalBpmTextBox
+            // 
+            this.OriginalBpmTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(24)))), ((int)(((byte)(38)))));
+            this.OriginalBpmTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.OriginalBpmTextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OriginalBpmTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.OriginalBpmTextBox.Location = new System.Drawing.Point(89, 35);
+            this.OriginalBpmTextBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.OriginalBpmTextBox.Name = "OriginalBpmTextBox";
+            this.OriginalBpmTextBox.ReadOnly = true;
+            this.OriginalBpmTextBox.Size = new System.Drawing.Size(42, 18);
+            this.OriginalBpmTextBox.TabIndex = 10;
+            this.OriginalBpmTextBox.Text = "200";
+            this.OriginalBpmTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.OriginalBpmTextBox.Enter += new System.EventHandler(this.Unfocus);
+            // 
+            // renameButton4
+            // 
+            this.renameButton4.FlatAppearance.BorderSize = 0;
+            this.renameButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.renameButton4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.renameButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(134)))));
+            this.renameButton4.Location = new System.Drawing.Point(315, 132);
+            this.renameButton4.Name = "renameButton4";
+            this.renameButton4.Size = new System.Drawing.Size(96, 20);
+            this.renameButton4.TabIndex = 25;
+            this.renameButton4.Text = "Rename";
+            this.renameButton4.UseVisualStyleBackColor = true;
+            this.renameButton4.Click += new System.EventHandler(this.renameButton4_Click);
+            // 
+            // renameButton3
+            // 
+            this.renameButton3.FlatAppearance.BorderSize = 0;
+            this.renameButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.renameButton3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.renameButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(134)))));
+            this.renameButton3.Location = new System.Drawing.Point(214, 132);
+            this.renameButton3.Name = "renameButton3";
+            this.renameButton3.Size = new System.Drawing.Size(96, 20);
+            this.renameButton3.TabIndex = 25;
+            this.renameButton3.Text = "Rename";
+            this.renameButton3.UseVisualStyleBackColor = true;
+            this.renameButton3.Click += new System.EventHandler(this.renameButton3_Click);
+            // 
+            // renameButton2
+            // 
+            this.renameButton2.FlatAppearance.BorderSize = 0;
+            this.renameButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.renameButton2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.renameButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(134)))));
+            this.renameButton2.Location = new System.Drawing.Point(112, 132);
+            this.renameButton2.Name = "renameButton2";
+            this.renameButton2.Size = new System.Drawing.Size(96, 20);
+            this.renameButton2.TabIndex = 25;
+            this.renameButton2.Text = "Rename";
+            this.renameButton2.UseVisualStyleBackColor = true;
+            this.renameButton2.Click += new System.EventHandler(this.renameButton2_Click);
+            // 
+            // renameButton1
+            // 
+            this.renameButton1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.renameButton1.FlatAppearance.BorderSize = 0;
+            this.renameButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.renameButton1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.renameButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(134)))));
+            this.renameButton1.Location = new System.Drawing.Point(10, 132);
+            this.renameButton1.Name = "renameButton1";
+            this.renameButton1.Size = new System.Drawing.Size(96, 20);
+            this.renameButton1.TabIndex = 25;
+            this.renameButton1.Text = "Rename";
+            this.renameButton1.UseVisualStyleBackColor = true;
+            this.renameButton1.Click += new System.EventHandler(this.renameButton1_Click);
+            // 
+            // editHotkeysButton
+            // 
+            this.editHotkeysButton.FlatAppearance.BorderSize = 0;
+            this.editHotkeysButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editHotkeysButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editHotkeysButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
+            this.editHotkeysButton.Location = new System.Drawing.Point(328, 11);
+            this.editHotkeysButton.Name = "editHotkeysButton";
+            this.editHotkeysButton.Size = new System.Drawing.Size(89, 23);
+            this.editHotkeysButton.TabIndex = 25;
+            this.editHotkeysButton.Text = "Edit Hotkeys";
+            this.editHotkeysButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.editHotkeysButton.UseVisualStyleBackColor = true;
+            this.editHotkeysButton.Click += new System.EventHandler(this.editHotkeysButton_Click);
+            // 
+            // Middle1Panel
+            // 
+            this.Middle1Panel.Controls.Add(this.tableLayoutPanel1);
+            this.Middle1Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Middle1Panel.Location = new System.Drawing.Point(0, 151);
+            this.Middle1Panel.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.Middle1Panel.Name = "Middle1Panel";
+            this.Middle1Panel.Padding = new System.Windows.Forms.Padding(10, 3, 15, 5);
+            this.Middle1Panel.Size = new System.Drawing.Size(427, 121);
+            this.Middle1Panel.TabIndex = 10;
+            this.Middle1Panel.Click += new System.EventHandler(this.Unfocus);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 41F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel1.Controls.Add(this.ODLockCheck, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.ARLockCheck, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.CSLockCheck, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.odlabel, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.ODDisplay, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.ODSlider, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.arlabel, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.ARDisplay, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.ARSlider, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.cslabel, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.CSDisplay, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.CSSlider, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.hplabel, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.HPDisplay, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.HPSlider, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.HPLockCheck, 3, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(402, 113);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // ODDisplay
+            // 
+            this.ODDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.ODDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(24)))), ((int)(((byte)(38)))));
+            this.ODDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ODDisplay.Enabled = false;
+            this.ODDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ODDisplay.Location = new System.Drawing.Point(41, 89);
+            this.ODDisplay.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.ODDisplay.Name = "ODDisplay";
+            this.ODDisplay.ReadOnly = true;
+            this.ODDisplay.Size = new System.Drawing.Size(35, 22);
+            this.ODDisplay.TabIndex = 10;
+            this.ODDisplay.Text = "0.0";
+            this.ODDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ODDisplay.Enter += new System.EventHandler(this.Unfocus);
+            // 
+            // ARDisplay
+            // 
+            this.ARDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.ARDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(24)))), ((int)(((byte)(38)))));
+            this.ARDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ARDisplay.Enabled = false;
+            this.ARDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ARDisplay.Location = new System.Drawing.Point(41, 61);
+            this.ARDisplay.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.ARDisplay.Name = "ARDisplay";
+            this.ARDisplay.ReadOnly = true;
+            this.ARDisplay.Size = new System.Drawing.Size(35, 22);
+            this.ARDisplay.TabIndex = 7;
+            this.ARDisplay.Text = "0.0";
+            this.ARDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ARDisplay.Enter += new System.EventHandler(this.Unfocus);
+            // 
+            // CSDisplay
+            // 
+            this.CSDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.CSDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(24)))), ((int)(((byte)(38)))));
+            this.CSDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CSDisplay.Enabled = false;
+            this.CSDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.CSDisplay.Location = new System.Drawing.Point(41, 33);
+            this.CSDisplay.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.CSDisplay.Name = "CSDisplay";
+            this.CSDisplay.ReadOnly = true;
+            this.CSDisplay.Size = new System.Drawing.Size(35, 22);
+            this.CSDisplay.TabIndex = 4;
+            this.CSDisplay.Text = "0.0";
+            this.CSDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CSDisplay.Enter += new System.EventHandler(this.Unfocus);
+            // 
+            // HPDisplay
+            // 
+            this.HPDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.HPDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(24)))), ((int)(((byte)(38)))));
+            this.HPDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.HPDisplay.Enabled = false;
+            this.HPDisplay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HPDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.HPDisplay.Location = new System.Drawing.Point(41, 5);
+            this.HPDisplay.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
+            this.HPDisplay.Name = "HPDisplay";
+            this.HPDisplay.ReadOnly = true;
+            this.HPDisplay.Size = new System.Drawing.Size(35, 22);
+            this.HPDisplay.TabIndex = 1;
+            this.HPDisplay.Text = "0.0";
+            this.HPDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.HPDisplay.Enter += new System.EventHandler(this.Unfocus);
+            // 
+            // BottomPanel
+            // 
+            this.BottomPanel.Controls.Add(this.ResetButton);
+            this.BottomPanel.Controls.Add(this.GenerateMapButton);
+            this.BottomPanel.Controls.Add(this.SongsFolderButton);
+            this.BottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BottomPanel.Location = new System.Drawing.Point(0, 729);
+            this.BottomPanel.Name = "BottomPanel";
+            this.BottomPanel.Padding = new System.Windows.Forms.Padding(10, 5, 10, 10);
+            this.BottomPanel.Size = new System.Drawing.Size(427, 111);
+            this.BottomPanel.TabIndex = 11;
+            this.BottomPanel.Click += new System.EventHandler(this.Unfocus);
+            // 
+            // TopPanel
+            // 
+            this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
+            this.TopPanel.Controls.Add(this.SongDisplay);
+            this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopPanel.Location = new System.Drawing.Point(0, 30);
+            this.TopPanel.Name = "TopPanel";
+            this.TopPanel.Padding = new System.Windows.Forms.Padding(10);
+            this.TopPanel.Size = new System.Drawing.Size(427, 121);
+            this.TopPanel.TabIndex = 12;
+            // 
+            // OsuRunningTimer
+            // 
+            this.OsuRunningTimer.Interval = 500;
+            this.OsuRunningTimer.Tick += new System.EventHandler(this.OsuRunningTimer_Tick);
+            // 
+            // closeButton
+            // 
+            this.closeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
+            this.closeButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.closeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
+            this.closeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(10)))), ((int)(((byte)(20)))));
+            this.closeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton.Font = new System.Drawing.Font("Segoe UI Semilight", 9F);
+            this.closeButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.closeButton.Location = new System.Drawing.Point(382, 0);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(45, 30);
+            this.closeButton.TabIndex = 3;
+            this.closeButton.Text = "✕";
+            this.closeButton.UseVisualStyleBackColor = false;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // minimizeButton
+            // 
+            this.minimizeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
+            this.minimizeButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.minimizeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
+            this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeButton.Font = new System.Drawing.Font("Segoe UI Semilight", 9F);
+            this.minimizeButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.minimizeButton.Location = new System.Drawing.Point(337, 0);
+            this.minimizeButton.Name = "minimizeButton";
+            this.minimizeButton.Size = new System.Drawing.Size(45, 30);
+            this.minimizeButton.TabIndex = 3;
+            this.minimizeButton.Text = "🗕";
+            this.minimizeButton.UseVisualStyleBackColor = false;
+            this.minimizeButton.Click += new System.EventHandler(this.minimizeButton_Click);
+            // 
+            // titlePanel
+            // 
+            this.titlePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
+            this.titlePanel.Controls.Add(this.minimizeButton);
+            this.titlePanel.Controls.Add(this.closeButton);
+            this.titlePanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.titlePanel.Location = new System.Drawing.Point(0, 0);
+            this.titlePanel.Name = "titlePanel";
+            this.titlePanel.Size = new System.Drawing.Size(427, 30);
+            this.titlePanel.TabIndex = 14;
+            this.titlePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.titlePanel_Paint);
+            this.titlePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelMove_MouseDown);
+            this.titlePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PanelMove_MouseMove);
+            this.titlePanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PanelMove_MouseUp);
+            // 
+            // BackgroundWorker
+            // 
+            this.BackgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BackgroundWorker_DoWork);
+            this.BackgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BackgroundWorker_RunWorkerCompleted);
+            // 
+            // formAnimationTimer
+            // 
+            this.formAnimationTimer.Interval = 16;
+            this.formAnimationTimer.Tick += new System.EventHandler(this.formAnimationTimer_Tick);
+            // 
+            // extrasPanel
+            // 
+            this.extrasPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(44)))));
+            this.extrasPanel.Controls.Add(this.OpenBeatmapCheck);
+            this.extrasPanel.Controls.Add(this.ChangePitchCheck);
+            this.extrasPanel.Controls.Add(this.highQualityMp3Check);
+            this.extrasPanel.Controls.Add(this.NoSpinnersCheck);
+            this.extrasPanel.Controls.Add(this.button1);
+            this.extrasPanel.Controls.Add(this.editHotkeysButton);
+            this.extrasPanel.Controls.Add(this.updatesCheck);
+            this.extrasPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.extrasPanel.Location = new System.Drawing.Point(0, 583);
+            this.extrasPanel.Name = "extrasPanel";
+            this.extrasPanel.Size = new System.Drawing.Size(427, 144);
+            this.extrasPanel.TabIndex = 15;
+            this.extrasPanel.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
+            this.button1.Location = new System.Drawing.Point(280, 38);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(137, 23);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Delete Unused MP3s";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
+            // OpenBeatmapCheck
+            // 
+            this.OpenBeatmapCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.OpenBeatmapCheck.Checked = true;
+            this.OpenBeatmapCheck.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.OpenBeatmapCheck.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(134)))), ((int)(((byte)(144)))));
+            this.OpenBeatmapCheck.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.OpenBeatmapCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
+            this.OpenBeatmapCheck.Location = new System.Drawing.Point(3, 99);
+            this.OpenBeatmapCheck.Name = "OpenBeatmapCheck";
+            this.OpenBeatmapCheck.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.OpenBeatmapCheck.Size = new System.Drawing.Size(137, 24);
+            this.OpenBeatmapCheck.TabIndex = 26;
+            this.OpenBeatmapCheck.Text = "Open Beatmap";
+            this.OpenBeatmapCheck.TextOnRight = true;
+            this.OpenBeatmapCheck.UseVisualStyleBackColor = true;
+            this.OpenBeatmapCheck.CheckedChanged += new System.EventHandler(this.openBeatmapCheckBox_CheckedChanged);
+            // 
+            // ChangePitchCheck
+            // 
+            this.ChangePitchCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChangePitchCheck.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(134)))), ((int)(((byte)(144)))));
+            this.ChangePitchCheck.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ChangePitchCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
+            this.ChangePitchCheck.Location = new System.Drawing.Point(2, 9);
+            this.ChangePitchCheck.Name = "ChangePitchCheck";
+            this.ChangePitchCheck.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ChangePitchCheck.Size = new System.Drawing.Size(130, 24);
+            this.ChangePitchCheck.TabIndex = 22;
+            this.ChangePitchCheck.Text = "Change pitch";
+            this.ChangePitchCheck.TextOnRight = true;
+            this.ChangePitchCheck.UseVisualStyleBackColor = true;
+            this.ChangePitchCheck.CheckedChanged += new System.EventHandler(this.ChangePitchButton_CheckedChanged);
+            // 
+            // highQualityMp3Check
+            // 
+            this.highQualityMp3Check.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(134)))), ((int)(((byte)(144)))));
+            this.highQualityMp3Check.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.highQualityMp3Check.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
+            this.highQualityMp3Check.Location = new System.Drawing.Point(2, 69);
+            this.highQualityMp3Check.Name = "highQualityMp3Check";
+            this.highQualityMp3Check.Size = new System.Drawing.Size(155, 24);
+            this.highQualityMp3Check.TabIndex = 20;
+            this.highQualityMp3Check.Text = "High quality mp3";
+            this.highQualityMp3Check.TextOnRight = true;
+            this.highQualityMp3Check.UseVisualStyleBackColor = true;
+            this.highQualityMp3Check.CheckedChanged += new System.EventHandler(this.highQualityCheckBox_CheckedChanged);
+            // 
+            // NoSpinnersCheck
+            // 
+            this.NoSpinnersCheck.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(134)))), ((int)(((byte)(144)))));
+            this.NoSpinnersCheck.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.NoSpinnersCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
+            this.NoSpinnersCheck.Location = new System.Drawing.Point(2, 39);
+            this.NoSpinnersCheck.Name = "NoSpinnersCheck";
+            this.NoSpinnersCheck.Size = new System.Drawing.Size(124, 24);
+            this.NoSpinnersCheck.TabIndex = 20;
+            this.NoSpinnersCheck.Text = "No spinners";
+            this.NoSpinnersCheck.TextOnRight = true;
+            this.NoSpinnersCheck.UseVisualStyleBackColor = true;
+            this.NoSpinnersCheck.CheckedChanged += new System.EventHandler(this.NoSpinnerCheckBox_CheckedChanged);
+            // 
+            // updatesCheck
+            // 
+            this.updatesCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.updatesCheck.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(134)))), ((int)(((byte)(144)))));
+            this.updatesCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
+            this.updatesCheck.Location = new System.Drawing.Point(264, 67);
+            this.updatesCheck.Name = "updatesCheck";
+            this.updatesCheck.Size = new System.Drawing.Size(160, 24);
+            this.updatesCheck.TabIndex = 20;
+            this.updatesCheck.Text = "Check for updates";
+            this.updatesCheck.UseVisualStyleBackColor = true;
+            this.updatesCheck.CheckedChanged += new System.EventHandler(this.updatesCheck_CheckedChanged);
+            // 
+            // profileButton12
+            // 
+            this.profileButton12.allowAnimation = true;
+            this.profileButton12.BrightnessRange = 0.01F;
+            this.profileButton12.Color = System.Drawing.Color.MediumPurple;
+            this.profileButton12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton12.ForeColor = System.Drawing.Color.White;
+            this.profileButton12.Location = new System.Drawing.Point(316, 224);
+            this.profileButton12.Name = "profileButton12";
+            this.profileButton12.Progress = 0F;
+            this.profileButton12.ProgressColor = System.Drawing.Color.Transparent;
+            this.profileButton12.Size = new System.Drawing.Size(96, 24);
+            this.profileButton12.Subtext = "";
+            this.profileButton12.SubtextColor = System.Drawing.Color.Empty;
+            this.profileButton12.TabIndex = 39;
+            this.profileButton12.Text = "Profile 12";
+            this.profileButton12.TextYOffset = 0;
+            this.profileButton12.TriangleCount = 30;
+            this.profileButton12.UseVisualStyleBackColor = true;
+            this.profileButton12.Click += new System.EventHandler(this.profileButton12_Click);
+            // 
+            // profileButton11
+            // 
+            this.profileButton11.allowAnimation = true;
+            this.profileButton11.BrightnessRange = 0.01F;
+            this.profileButton11.Color = System.Drawing.Color.MediumPurple;
+            this.profileButton11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton11.ForeColor = System.Drawing.Color.White;
+            this.profileButton11.Location = new System.Drawing.Point(214, 224);
+            this.profileButton11.Name = "profileButton11";
+            this.profileButton11.Progress = 0F;
+            this.profileButton11.ProgressColor = System.Drawing.Color.Transparent;
+            this.profileButton11.Size = new System.Drawing.Size(96, 24);
+            this.profileButton11.Subtext = "";
+            this.profileButton11.SubtextColor = System.Drawing.Color.Empty;
+            this.profileButton11.TabIndex = 40;
+            this.profileButton11.Text = "Profile 11";
+            this.profileButton11.TextYOffset = 0;
+            this.profileButton11.TriangleCount = 30;
+            this.profileButton11.UseVisualStyleBackColor = true;
+            this.profileButton11.Click += new System.EventHandler(this.profileButton11_Click);
+            // 
+            // profileButton10
+            // 
+            this.profileButton10.allowAnimation = true;
+            this.profileButton10.BrightnessRange = 0.01F;
+            this.profileButton10.Color = System.Drawing.Color.MediumPurple;
+            this.profileButton10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton10.ForeColor = System.Drawing.Color.White;
+            this.profileButton10.Location = new System.Drawing.Point(112, 224);
+            this.profileButton10.Name = "profileButton10";
+            this.profileButton10.Progress = 0F;
+            this.profileButton10.ProgressColor = System.Drawing.Color.Transparent;
+            this.profileButton10.Size = new System.Drawing.Size(96, 24);
+            this.profileButton10.Subtext = "";
+            this.profileButton10.SubtextColor = System.Drawing.Color.Empty;
+            this.profileButton10.TabIndex = 41;
+            this.profileButton10.Text = "Profile 10";
+            this.profileButton10.TextYOffset = 0;
+            this.profileButton10.TriangleCount = 30;
+            this.profileButton10.UseVisualStyleBackColor = true;
+            this.profileButton10.Click += new System.EventHandler(this.profileButton10_Click);
+            // 
+            // profileButton9
+            // 
+            this.profileButton9.allowAnimation = true;
+            this.profileButton9.BrightnessRange = 0.01F;
+            this.profileButton9.Color = System.Drawing.Color.MediumPurple;
+            this.profileButton9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton9.ForeColor = System.Drawing.Color.White;
+            this.profileButton9.Location = new System.Drawing.Point(10, 224);
+            this.profileButton9.Name = "profileButton9";
+            this.profileButton9.Progress = 0F;
+            this.profileButton9.ProgressColor = System.Drawing.Color.Transparent;
+            this.profileButton9.Size = new System.Drawing.Size(96, 24);
+            this.profileButton9.Subtext = "";
+            this.profileButton9.SubtextColor = System.Drawing.Color.Empty;
+            this.profileButton9.TabIndex = 42;
+            this.profileButton9.Text = "Profile 9";
+            this.profileButton9.TextYOffset = 0;
+            this.profileButton9.TriangleCount = 30;
+            this.profileButton9.UseVisualStyleBackColor = true;
+            this.profileButton9.Click += new System.EventHandler(this.profileButton9_Click);
+            // 
+            // profileButton8
+            // 
+            this.profileButton8.allowAnimation = true;
+            this.profileButton8.BrightnessRange = 0.01F;
+            this.profileButton8.Color = System.Drawing.Color.MediumPurple;
+            this.profileButton8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton8.ForeColor = System.Drawing.Color.White;
+            this.profileButton8.Location = new System.Drawing.Point(316, 158);
+            this.profileButton8.Name = "profileButton8";
+            this.profileButton8.Progress = 0F;
+            this.profileButton8.ProgressColor = System.Drawing.Color.Transparent;
+            this.profileButton8.Size = new System.Drawing.Size(96, 24);
+            this.profileButton8.Subtext = "";
+            this.profileButton8.SubtextColor = System.Drawing.Color.Empty;
+            this.profileButton8.TabIndex = 27;
+            this.profileButton8.Text = "Profile 8";
+            this.profileButton8.TextYOffset = 0;
+            this.profileButton8.TriangleCount = 30;
+            this.profileButton8.UseVisualStyleBackColor = true;
+            this.profileButton8.Click += new System.EventHandler(this.profileButton8_Click);
+            // 
+            // profileButton7
+            // 
+            this.profileButton7.allowAnimation = true;
+            this.profileButton7.BrightnessRange = 0.01F;
+            this.profileButton7.Color = System.Drawing.Color.MediumPurple;
+            this.profileButton7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton7.ForeColor = System.Drawing.Color.White;
+            this.profileButton7.Location = new System.Drawing.Point(214, 158);
+            this.profileButton7.Name = "profileButton7";
+            this.profileButton7.Progress = 0F;
+            this.profileButton7.ProgressColor = System.Drawing.Color.Transparent;
+            this.profileButton7.Size = new System.Drawing.Size(96, 24);
+            this.profileButton7.Subtext = "";
+            this.profileButton7.SubtextColor = System.Drawing.Color.Empty;
+            this.profileButton7.TabIndex = 28;
+            this.profileButton7.Text = "Profile 7";
+            this.profileButton7.TextYOffset = 0;
+            this.profileButton7.TriangleCount = 30;
+            this.profileButton7.UseVisualStyleBackColor = true;
+            this.profileButton7.Click += new System.EventHandler(this.profileButton7_Click);
+            // 
+            // profileButton6
+            // 
+            this.profileButton6.allowAnimation = true;
+            this.profileButton6.BrightnessRange = 0.01F;
+            this.profileButton6.Color = System.Drawing.Color.MediumPurple;
+            this.profileButton6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton6.ForeColor = System.Drawing.Color.White;
+            this.profileButton6.Location = new System.Drawing.Point(112, 158);
+            this.profileButton6.Name = "profileButton6";
+            this.profileButton6.Progress = 0F;
+            this.profileButton6.ProgressColor = System.Drawing.Color.Transparent;
+            this.profileButton6.Size = new System.Drawing.Size(96, 24);
+            this.profileButton6.Subtext = "";
+            this.profileButton6.SubtextColor = System.Drawing.Color.Empty;
+            this.profileButton6.TabIndex = 29;
+            this.profileButton6.Text = "Profile 6";
+            this.profileButton6.TextYOffset = 0;
+            this.profileButton6.TriangleCount = 30;
+            this.profileButton6.UseVisualStyleBackColor = true;
+            this.profileButton6.Click += new System.EventHandler(this.profileButton6_Click);
+            // 
+            // profileButton5
+            // 
+            this.profileButton5.allowAnimation = true;
+            this.profileButton5.BrightnessRange = 0.01F;
+            this.profileButton5.Color = System.Drawing.Color.MediumPurple;
+            this.profileButton5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton5.ForeColor = System.Drawing.Color.White;
+            this.profileButton5.Location = new System.Drawing.Point(10, 158);
+            this.profileButton5.Name = "profileButton5";
+            this.profileButton5.Progress = 0F;
+            this.profileButton5.ProgressColor = System.Drawing.Color.Transparent;
+            this.profileButton5.Size = new System.Drawing.Size(96, 24);
+            this.profileButton5.Subtext = "";
+            this.profileButton5.SubtextColor = System.Drawing.Color.Empty;
+            this.profileButton5.TabIndex = 30;
+            this.profileButton5.Text = "Profile 5";
+            this.profileButton5.TextYOffset = 0;
+            this.profileButton5.TriangleCount = 30;
+            this.profileButton5.UseVisualStyleBackColor = true;
+            this.profileButton5.Click += new System.EventHandler(this.profileButton5_Click);
+            // 
+            // profileButton4
+            // 
+            this.profileButton4.allowAnimation = true;
+            this.profileButton4.BrightnessRange = 0.01F;
+            this.profileButton4.Color = System.Drawing.Color.MediumPurple;
+            this.profileButton4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton4.ForeColor = System.Drawing.Color.White;
+            this.profileButton4.Location = new System.Drawing.Point(316, 92);
+            this.profileButton4.Name = "profileButton4";
+            this.profileButton4.Progress = 0F;
+            this.profileButton4.ProgressColor = System.Drawing.Color.Transparent;
+            this.profileButton4.Size = new System.Drawing.Size(96, 24);
+            this.profileButton4.Subtext = "";
+            this.profileButton4.SubtextColor = System.Drawing.Color.Empty;
+            this.profileButton4.TabIndex = 24;
+            this.profileButton4.Text = "Profile 4";
+            this.profileButton4.TextYOffset = 0;
+            this.profileButton4.TriangleCount = 30;
+            this.profileButton4.UseVisualStyleBackColor = true;
+            this.profileButton4.Click += new System.EventHandler(this.profileButton4_Click);
+            // 
+            // profileButton3
+            // 
+            this.profileButton3.allowAnimation = true;
+            this.profileButton3.BrightnessRange = 0.01F;
+            this.profileButton3.Color = System.Drawing.Color.MediumPurple;
+            this.profileButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton3.ForeColor = System.Drawing.Color.White;
+            this.profileButton3.Location = new System.Drawing.Point(214, 92);
+            this.profileButton3.Name = "profileButton3";
+            this.profileButton3.Progress = 0F;
+            this.profileButton3.ProgressColor = System.Drawing.Color.Turquoise;
+            this.profileButton3.Size = new System.Drawing.Size(96, 24);
+            this.profileButton3.Subtext = "";
+            this.profileButton3.SubtextColor = System.Drawing.Color.Empty;
+            this.profileButton3.TabIndex = 24;
+            this.profileButton3.Text = "Profile 3";
+            this.profileButton3.TextYOffset = 0;
+            this.profileButton3.TriangleCount = 30;
+            this.profileButton3.UseVisualStyleBackColor = true;
+            this.profileButton3.Click += new System.EventHandler(this.profileButton3_Click);
+            // 
+            // profileButton2
+            // 
+            this.profileButton2.allowAnimation = true;
+            this.profileButton2.BrightnessRange = 0.01F;
+            this.profileButton2.Color = System.Drawing.Color.MediumPurple;
+            this.profileButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton2.ForeColor = System.Drawing.Color.White;
+            this.profileButton2.Location = new System.Drawing.Point(112, 92);
+            this.profileButton2.Name = "profileButton2";
+            this.profileButton2.Progress = 0F;
+            this.profileButton2.ProgressColor = System.Drawing.Color.Transparent;
+            this.profileButton2.Size = new System.Drawing.Size(96, 24);
+            this.profileButton2.Subtext = "";
+            this.profileButton2.SubtextColor = System.Drawing.Color.Empty;
+            this.profileButton2.TabIndex = 24;
+            this.profileButton2.Text = "Profile 2";
+            this.profileButton2.TextYOffset = 0;
+            this.profileButton2.TriangleCount = 30;
+            this.profileButton2.UseVisualStyleBackColor = true;
+            this.profileButton2.Click += new System.EventHandler(this.profileButton2_Click);
+            // 
+            // profileButton1
+            // 
+            this.profileButton1.allowAnimation = true;
+            this.profileButton1.BrightnessRange = 0.01F;
+            this.profileButton1.Color = System.Drawing.Color.MediumPurple;
+            this.profileButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileButton1.ForeColor = System.Drawing.Color.White;
+            this.profileButton1.Location = new System.Drawing.Point(10, 92);
+            this.profileButton1.Name = "profileButton1";
+            this.profileButton1.Progress = 0F;
+            this.profileButton1.ProgressColor = System.Drawing.Color.Transparent;
+            this.profileButton1.Size = new System.Drawing.Size(96, 24);
+            this.profileButton1.Subtext = "";
+            this.profileButton1.SubtextColor = System.Drawing.Color.Empty;
+            this.profileButton1.TabIndex = 24;
+            this.profileButton1.Text = "Profile 1";
+            this.profileButton1.TextYOffset = 0;
+            this.profileButton1.TriangleCount = 30;
+            this.profileButton1.UseVisualStyleBackColor = true;
+            this.profileButton1.Click += new System.EventHandler(this.profileButton1_Click);
             // 
             // BpmLockCheck
             // 
@@ -822,22 +1277,6 @@ namespace osu_trainer
             this.ScaleARCheck.UseVisualStyleBackColor = true;
             this.ScaleARCheck.CheckedChanged += new System.EventHandler(this.ScaleARCheck_CheckedChanged);
             // 
-            // BpmMultiplierTextBox
-            // 
-            this.BpmMultiplierTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(16)))), ((int)(((byte)(25)))));
-            this.BpmMultiplierTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BpmMultiplierTextBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BpmMultiplierTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BpmMultiplierTextBox.Location = new System.Drawing.Point(90, 5);
-            this.BpmMultiplierTextBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
-            this.BpmMultiplierTextBox.Name = "BpmMultiplierTextBox";
-            this.BpmMultiplierTextBox.Size = new System.Drawing.Size(42, 20);
-            this.BpmMultiplierTextBox.TabIndex = 10;
-            this.BpmMultiplierTextBox.Text = "1.00";
-            this.BpmMultiplierTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BpmMultiplierTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.BpmMultiplierTextBox_KeyDown);
-            this.BpmMultiplierTextBox.Leave += new System.EventHandler(this.BpmMultiplierTextBox_Submit);
-            // 
             // NewBpmTextBox
             // 
             this.NewBpmTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(16)))), ((int)(((byte)(25)))));
@@ -854,64 +1293,6 @@ namespace osu_trainer
             this.NewBpmTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NewBpmTextBox_KeyPress);
             this.NewBpmTextBox.Leave += new System.EventHandler(this.NewBpmTextBox_Leave);
             // 
-            // NewBpmRangeTextBox
-            // 
-            this.NewBpmRangeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(35)))), ((int)(((byte)(53)))));
-            this.NewBpmRangeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NewBpmRangeTextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewBpmRangeTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(134)))));
-            this.NewBpmRangeTextBox.Location = new System.Drawing.Point(163, 64);
-            this.NewBpmRangeTextBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
-            this.NewBpmRangeTextBox.Name = "NewBpmRangeTextBox";
-            this.NewBpmRangeTextBox.ReadOnly = true;
-            this.NewBpmRangeTextBox.Size = new System.Drawing.Size(85, 18);
-            this.NewBpmRangeTextBox.TabIndex = 10;
-            this.NewBpmRangeTextBox.Text = "(180 - 210)";
-            // 
-            // OriginalBpmRangeTextBox
-            // 
-            this.OriginalBpmRangeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(35)))), ((int)(((byte)(53)))));
-            this.OriginalBpmRangeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.OriginalBpmRangeTextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OriginalBpmRangeTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(134)))));
-            this.OriginalBpmRangeTextBox.Location = new System.Drawing.Point(163, 35);
-            this.OriginalBpmRangeTextBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
-            this.OriginalBpmRangeTextBox.Name = "OriginalBpmRangeTextBox";
-            this.OriginalBpmRangeTextBox.ReadOnly = true;
-            this.OriginalBpmRangeTextBox.Size = new System.Drawing.Size(85, 18);
-            this.OriginalBpmRangeTextBox.TabIndex = 20;
-            this.OriginalBpmRangeTextBox.Text = "(180 - 210)";
-            // 
-            // OriginalBpmTextBox
-            // 
-            this.OriginalBpmTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(24)))), ((int)(((byte)(38)))));
-            this.OriginalBpmTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.OriginalBpmTextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OriginalBpmTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.OriginalBpmTextBox.Location = new System.Drawing.Point(89, 35);
-            this.OriginalBpmTextBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
-            this.OriginalBpmTextBox.Name = "OriginalBpmTextBox";
-            this.OriginalBpmTextBox.ReadOnly = true;
-            this.OriginalBpmTextBox.Size = new System.Drawing.Size(42, 18);
-            this.OriginalBpmTextBox.TabIndex = 10;
-            this.OriginalBpmTextBox.Text = "200";
-            this.OriginalBpmTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.OriginalBpmTextBox.Enter += new System.EventHandler(this.Unfocus);
-            // 
-            // renameButton4
-            // 
-            this.renameButton4.FlatAppearance.BorderSize = 0;
-            this.renameButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.renameButton4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.renameButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(134)))));
-            this.renameButton4.Location = new System.Drawing.Point(315, 132);
-            this.renameButton4.Name = "renameButton4";
-            this.renameButton4.Size = new System.Drawing.Size(96, 20);
-            this.renameButton4.TabIndex = 25;
-            this.renameButton4.Text = "Rename";
-            this.renameButton4.UseVisualStyleBackColor = true;
-            this.renameButton4.Click += new System.EventHandler(this.renameButton4_Click);
-            // 
             // OriginalBpmLabel
             // 
             this.OriginalBpmLabel.AutoSize = true;
@@ -924,20 +1305,6 @@ namespace osu_trainer
             this.OriginalBpmLabel.TabIndex = 9;
             this.OriginalBpmLabel.Text = "Old BPM";
             this.OriginalBpmLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // renameButton3
-            // 
-            this.renameButton3.FlatAppearance.BorderSize = 0;
-            this.renameButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.renameButton3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.renameButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(134)))));
-            this.renameButton3.Location = new System.Drawing.Point(214, 132);
-            this.renameButton3.Name = "renameButton3";
-            this.renameButton3.Size = new System.Drawing.Size(96, 20);
-            this.renameButton3.TabIndex = 25;
-            this.renameButton3.Text = "Rename";
-            this.renameButton3.UseVisualStyleBackColor = true;
-            this.renameButton3.Click += new System.EventHandler(this.renameButton3_Click);
             // 
             // NewBpmLabel
             // 
@@ -952,20 +1319,6 @@ namespace osu_trainer
             this.NewBpmLabel.Text = "New BPM";
             this.NewBpmLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // renameButton2
-            // 
-            this.renameButton2.FlatAppearance.BorderSize = 0;
-            this.renameButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.renameButton2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.renameButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(134)))));
-            this.renameButton2.Location = new System.Drawing.Point(112, 132);
-            this.renameButton2.Name = "renameButton2";
-            this.renameButton2.Size = new System.Drawing.Size(96, 20);
-            this.renameButton2.TabIndex = 25;
-            this.renameButton2.Text = "Rename";
-            this.renameButton2.UseVisualStyleBackColor = true;
-            this.renameButton2.Click += new System.EventHandler(this.renameButton2_Click);
-            // 
             // BpmMultiplierLabel
             // 
             this.BpmMultiplierLabel.AutoSize = true;
@@ -977,83 +1330,6 @@ namespace osu_trainer
             this.BpmMultiplierLabel.TabIndex = 1;
             this.BpmMultiplierLabel.Text = "Rate";
             this.BpmMultiplierLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // renameButton1
-            // 
-            this.renameButton1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.renameButton1.FlatAppearance.BorderSize = 0;
-            this.renameButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.renameButton1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.renameButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(134)))));
-            this.renameButton1.Location = new System.Drawing.Point(10, 132);
-            this.renameButton1.Name = "renameButton1";
-            this.renameButton1.Size = new System.Drawing.Size(96, 20);
-            this.renameButton1.TabIndex = 25;
-            this.renameButton1.Text = "Rename";
-            this.renameButton1.UseVisualStyleBackColor = true;
-            this.renameButton1.Click += new System.EventHandler(this.renameButton1_Click);
-            // 
-            // editHotkeysButton
-            // 
-            this.editHotkeysButton.FlatAppearance.BorderSize = 0;
-            this.editHotkeysButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editHotkeysButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editHotkeysButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
-            this.editHotkeysButton.Location = new System.Drawing.Point(328, 11);
-            this.editHotkeysButton.Name = "editHotkeysButton";
-            this.editHotkeysButton.Size = new System.Drawing.Size(89, 23);
-            this.editHotkeysButton.TabIndex = 25;
-            this.editHotkeysButton.Text = "Edit Hotkeys";
-            this.editHotkeysButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.editHotkeysButton.UseVisualStyleBackColor = true;
-            this.editHotkeysButton.Click += new System.EventHandler(this.editHotkeysButton_Click);
-            // 
-            // Middle1Panel
-            // 
-            this.Middle1Panel.Controls.Add(this.tableLayoutPanel1);
-            this.Middle1Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Middle1Panel.Location = new System.Drawing.Point(0, 151);
-            this.Middle1Panel.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.Middle1Panel.Name = "Middle1Panel";
-            this.Middle1Panel.Padding = new System.Windows.Forms.Padding(10, 3, 15, 5);
-            this.Middle1Panel.Size = new System.Drawing.Size(427, 121);
-            this.Middle1Panel.TabIndex = 10;
-            this.Middle1Panel.Click += new System.EventHandler(this.Unfocus);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 41F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel1.Controls.Add(this.ODLockCheck, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.ARLockCheck, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.CSLockCheck, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.odlabel, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.ODDisplay, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.ODSlider, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.arlabel, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.ARDisplay, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.ARSlider, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.cslabel, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.CSDisplay, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.CSSlider, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.hplabel, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.HPDisplay, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.HPSlider, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.HPLockCheck, 3, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(402, 113);
-            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // ODLockCheck
             // 
@@ -1101,23 +1377,6 @@ namespace osu_trainer
             this.odlabel.TabIndex = 9;
             this.odlabel.Text = "OD";
             this.odlabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // ODDisplay
-            // 
-            this.ODDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.ODDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(24)))), ((int)(((byte)(38)))));
-            this.ODDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ODDisplay.Enabled = false;
-            this.ODDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ODDisplay.Location = new System.Drawing.Point(41, 89);
-            this.ODDisplay.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
-            this.ODDisplay.Name = "ODDisplay";
-            this.ODDisplay.ReadOnly = true;
-            this.ODDisplay.Size = new System.Drawing.Size(35, 22);
-            this.ODDisplay.TabIndex = 10;
-            this.ODDisplay.Text = "0.0";
-            this.ODDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ODDisplay.Enter += new System.EventHandler(this.Unfocus);
             // 
             // ODSlider
             // 
@@ -1171,23 +1430,6 @@ namespace osu_trainer
             this.arlabel.Text = "AR";
             this.arlabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // ARDisplay
-            // 
-            this.ARDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.ARDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(24)))), ((int)(((byte)(38)))));
-            this.ARDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ARDisplay.Enabled = false;
-            this.ARDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ARDisplay.Location = new System.Drawing.Point(41, 61);
-            this.ARDisplay.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
-            this.ARDisplay.Name = "ARDisplay";
-            this.ARDisplay.ReadOnly = true;
-            this.ARDisplay.Size = new System.Drawing.Size(35, 22);
-            this.ARDisplay.TabIndex = 7;
-            this.ARDisplay.Text = "0.0";
-            this.ARDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ARDisplay.Enter += new System.EventHandler(this.Unfocus);
-            // 
             // ARSlider
             // 
             this.ARSlider.BodyColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
@@ -1239,23 +1481,6 @@ namespace osu_trainer
             this.cslabel.TabIndex = 3;
             this.cslabel.Text = "CS";
             this.cslabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // CSDisplay
-            // 
-            this.CSDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.CSDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(24)))), ((int)(((byte)(38)))));
-            this.CSDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CSDisplay.Enabled = false;
-            this.CSDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.CSDisplay.Location = new System.Drawing.Point(41, 33);
-            this.CSDisplay.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
-            this.CSDisplay.Name = "CSDisplay";
-            this.CSDisplay.ReadOnly = true;
-            this.CSDisplay.Size = new System.Drawing.Size(35, 22);
-            this.CSDisplay.TabIndex = 4;
-            this.CSDisplay.Text = "0.0";
-            this.CSDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CSDisplay.Enter += new System.EventHandler(this.Unfocus);
             // 
             // CSSlider
             // 
@@ -1310,24 +1535,6 @@ namespace osu_trainer
             this.hplabel.Text = "HP";
             this.hplabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // HPDisplay
-            // 
-            this.HPDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.HPDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(24)))), ((int)(((byte)(38)))));
-            this.HPDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.HPDisplay.Enabled = false;
-            this.HPDisplay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HPDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.HPDisplay.Location = new System.Drawing.Point(41, 5);
-            this.HPDisplay.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
-            this.HPDisplay.Name = "HPDisplay";
-            this.HPDisplay.ReadOnly = true;
-            this.HPDisplay.Size = new System.Drawing.Size(35, 22);
-            this.HPDisplay.TabIndex = 1;
-            this.HPDisplay.Text = "0.0";
-            this.HPDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.HPDisplay.Enter += new System.EventHandler(this.Unfocus);
-            // 
             // HPSlider
             // 
             this.HPSlider.BodyColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
@@ -1378,21 +1585,9 @@ namespace osu_trainer
             this.HPLockCheck.UseVisualStyleBackColor = true;
             this.HPLockCheck.CheckedChanged += new System.EventHandler(this.HpLockCheck_CheckedChanged);
             // 
-            // BottomPanel
-            // 
-            this.BottomPanel.Controls.Add(this.ResetButton);
-            this.BottomPanel.Controls.Add(this.GenerateMapButton);
-            this.BottomPanel.Controls.Add(this.SongsFolderButton);
-            this.BottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BottomPanel.Location = new System.Drawing.Point(0, 729);
-            this.BottomPanel.Name = "BottomPanel";
-            this.BottomPanel.Padding = new System.Windows.Forms.Padding(10, 5, 10, 10);
-            this.BottomPanel.Size = new System.Drawing.Size(427, 111);
-            this.BottomPanel.TabIndex = 11;
-            this.BottomPanel.Click += new System.EventHandler(this.Unfocus);
-            // 
             // ResetButton
             // 
+            this.ResetButton.allowAnimation = true;
             this.ResetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ResetButton.BrightnessRange = 0.01F;
             this.ResetButton.Color = System.Drawing.Color.SteelBlue;
@@ -1416,6 +1611,7 @@ namespace osu_trainer
             // 
             // GenerateMapButton
             // 
+            this.GenerateMapButton.allowAnimation = true;
             this.GenerateMapButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.GenerateMapButton.BackColor = System.Drawing.Color.Transparent;
             this.GenerateMapButton.BrightnessRange = 0.01F;
@@ -1440,6 +1636,7 @@ namespace osu_trainer
             // 
             // SongsFolderButton
             // 
+            this.SongsFolderButton.allowAnimation = true;
             this.SongsFolderButton.BrightnessRange = 0.01F;
             this.SongsFolderButton.Color = System.Drawing.Color.DarkGoldenrod;
             this.SongsFolderButton.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
@@ -1460,17 +1657,6 @@ namespace osu_trainer
             this.SongsFolderButton.UseVisualStyleBackColor = true;
             this.SongsFolderButton.Click += new System.EventHandler(this.SongsFolderButton_Click);
             // 
-            // TopPanel
-            // 
-            this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.TopPanel.Controls.Add(this.SongDisplay);
-            this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TopPanel.Location = new System.Drawing.Point(0, 30);
-            this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Padding = new System.Windows.Forms.Padding(10);
-            this.TopPanel.Size = new System.Drawing.Size(427, 121);
-            this.TopPanel.TabIndex = 12;
-            // 
             // SongDisplay
             // 
             this.SongDisplay.Artist = null;
@@ -1486,175 +1672,6 @@ namespace osu_trainer
             this.SongDisplay.TabIndex = 7;
             this.SongDisplay.Text = "songDisplay1";
             this.SongDisplay.Title = null;
-            // 
-            // OsuRunningTimer
-            // 
-            this.OsuRunningTimer.Interval = 500;
-            this.OsuRunningTimer.Tick += new System.EventHandler(this.OsuRunningTimer_Tick);
-            // 
-            // closeButton
-            // 
-            this.closeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.closeButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.closeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.closeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(10)))), ((int)(((byte)(20)))));
-            this.closeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeButton.Font = new System.Drawing.Font("Segoe UI Semilight", 9F);
-            this.closeButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.closeButton.Location = new System.Drawing.Point(382, 0);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(45, 30);
-            this.closeButton.TabIndex = 3;
-            this.closeButton.Text = "✕";
-            this.closeButton.UseVisualStyleBackColor = false;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // minimizeButton
-            // 
-            this.minimizeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.minimizeButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.minimizeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minimizeButton.Font = new System.Drawing.Font("Segoe UI Semilight", 9F);
-            this.minimizeButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.minimizeButton.Location = new System.Drawing.Point(337, 0);
-            this.minimizeButton.Name = "minimizeButton";
-            this.minimizeButton.Size = new System.Drawing.Size(45, 30);
-            this.minimizeButton.TabIndex = 3;
-            this.minimizeButton.Text = "🗕";
-            this.minimizeButton.UseVisualStyleBackColor = false;
-            this.minimizeButton.Click += new System.EventHandler(this.minimizeButton_Click);
-            // 
-            // titlePanel
-            // 
-            this.titlePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.titlePanel.Controls.Add(this.minimizeButton);
-            this.titlePanel.Controls.Add(this.closeButton);
-            this.titlePanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.titlePanel.Location = new System.Drawing.Point(0, 0);
-            this.titlePanel.Name = "titlePanel";
-            this.titlePanel.Size = new System.Drawing.Size(427, 30);
-            this.titlePanel.TabIndex = 14;
-            this.titlePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.titlePanel_Paint);
-            this.titlePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelMove_MouseDown);
-            this.titlePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PanelMove_MouseMove);
-            this.titlePanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PanelMove_MouseUp);
-            // 
-            // BackgroundWorker
-            // 
-            this.BackgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BackgroundWorker_DoWork);
-            this.BackgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BackgroundWorker_RunWorkerCompleted);
-            // 
-            // formAnimationTimer
-            // 
-            this.formAnimationTimer.Interval = 16;
-            this.formAnimationTimer.Tick += new System.EventHandler(this.formAnimationTimer_Tick);
-            // 
-            // extrasPanel
-            // 
-            this.extrasPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(44)))));
-            this.extrasPanel.Controls.Add(this.OpenBeatmapCheck);
-            this.extrasPanel.Controls.Add(this.ChangePitchCheck);
-            this.extrasPanel.Controls.Add(this.highQualityMp3Check);
-            this.extrasPanel.Controls.Add(this.NoSpinnersCheck);
-            this.extrasPanel.Controls.Add(this.button1);
-            this.extrasPanel.Controls.Add(this.editHotkeysButton);
-            this.extrasPanel.Controls.Add(this.updatesCheck);
-            this.extrasPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.extrasPanel.Location = new System.Drawing.Point(0, 583);
-            this.extrasPanel.Name = "extrasPanel";
-            this.extrasPanel.Size = new System.Drawing.Size(427, 144);
-            this.extrasPanel.TabIndex = 15;
-            this.extrasPanel.Visible = false;
-            // 
-            // OpenBeatmapCheck
-            // 
-            this.OpenBeatmapCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.OpenBeatmapCheck.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(134)))), ((int)(((byte)(144)))));
-            this.OpenBeatmapCheck.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.OpenBeatmapCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
-            this.OpenBeatmapCheck.Location = new System.Drawing.Point(3, 99);
-            this.OpenBeatmapCheck.Name = "OpenBeatmapCheck";
-            this.OpenBeatmapCheck.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.OpenBeatmapCheck.Size = new System.Drawing.Size(137, 24);
-            this.OpenBeatmapCheck.TabIndex = 26;
-            this.OpenBeatmapCheck.Text = "Open Beatmap";
-            this.OpenBeatmapCheck.TextOnRight = true;
-            this.OpenBeatmapCheck.UseVisualStyleBackColor = true;
-            this.OpenBeatmapCheck.CheckedChanged += new System.EventHandler(this.openBeatmapCheckBox_CheckedChanged);
-            // 
-            // ChangePitchCheck
-            // 
-            this.ChangePitchCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ChangePitchCheck.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(134)))), ((int)(((byte)(144)))));
-            this.ChangePitchCheck.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.ChangePitchCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
-            this.ChangePitchCheck.Location = new System.Drawing.Point(2, 9);
-            this.ChangePitchCheck.Name = "ChangePitchCheck";
-            this.ChangePitchCheck.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ChangePitchCheck.Size = new System.Drawing.Size(130, 24);
-            this.ChangePitchCheck.TabIndex = 22;
-            this.ChangePitchCheck.Text = "Change pitch";
-            this.ChangePitchCheck.TextOnRight = true;
-            this.ChangePitchCheck.UseVisualStyleBackColor = true;
-            this.ChangePitchCheck.CheckedChanged += new System.EventHandler(this.ChangePitchButton_CheckedChanged);
-            // 
-            // highQualityMp3Check
-            // 
-            this.highQualityMp3Check.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(134)))), ((int)(((byte)(144)))));
-            this.highQualityMp3Check.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.highQualityMp3Check.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
-            this.highQualityMp3Check.Location = new System.Drawing.Point(2, 69);
-            this.highQualityMp3Check.Name = "highQualityMp3Check";
-            this.highQualityMp3Check.Size = new System.Drawing.Size(155, 24);
-            this.highQualityMp3Check.TabIndex = 20;
-            this.highQualityMp3Check.Text = "High quality mp3";
-            this.highQualityMp3Check.TextOnRight = true;
-            this.highQualityMp3Check.UseVisualStyleBackColor = true;
-            this.highQualityMp3Check.CheckedChanged += new System.EventHandler(this.highQualityCheckBox_CheckedChanged);
-            // 
-            // NoSpinnersCheck
-            // 
-            this.NoSpinnersCheck.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(134)))), ((int)(((byte)(144)))));
-            this.NoSpinnersCheck.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.NoSpinnersCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
-            this.NoSpinnersCheck.Location = new System.Drawing.Point(2, 39);
-            this.NoSpinnersCheck.Name = "NoSpinnersCheck";
-            this.NoSpinnersCheck.Size = new System.Drawing.Size(124, 24);
-            this.NoSpinnersCheck.TabIndex = 20;
-            this.NoSpinnersCheck.Text = "No spinners";
-            this.NoSpinnersCheck.TextOnRight = true;
-            this.NoSpinnersCheck.UseVisualStyleBackColor = true;
-            this.NoSpinnersCheck.CheckedChanged += new System.EventHandler(this.NoSpinnerCheckBox_CheckedChanged);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
-            this.button1.Location = new System.Drawing.Point(280, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 23);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Delete Unused MP3s";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.DeleteButton_Click);
-            // 
-            // updatesCheck
-            // 
-            this.updatesCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.updatesCheck.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(134)))), ((int)(((byte)(144)))));
-            this.updatesCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(154)))), ((int)(((byte)(233)))));
-            this.updatesCheck.Location = new System.Drawing.Point(251, 69);
-            this.updatesCheck.Name = "updatesCheck";
-            this.updatesCheck.Size = new System.Drawing.Size(160, 24);
-            this.updatesCheck.TabIndex = 20;
-            this.updatesCheck.Text = "Check for updates";
-            this.updatesCheck.UseVisualStyleBackColor = true;
-            this.updatesCheck.CheckedChanged += new System.EventHandler(this.updatesCheck_CheckedChanged);
             // 
             // MainForm
             // 
@@ -1676,6 +1693,8 @@ namespace osu_trainer
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "osu trainer";
+            this.Activated += new System.EventHandler(this.MainForm_Activated);
+            this.Deactivate += new System.EventHandler(this.MainForm_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.middlePanel.ResumeLayout(false);
             this.middlePanel.PerformLayout();

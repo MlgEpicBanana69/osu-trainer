@@ -26,6 +26,7 @@ namespace osu_trainer.Controls
         private bool _isHover = false;
         private int _opacity = 0;
         private const int _hoverOpacity = 48;
+        public bool allowAnimation { get; set; } = true;
 
         private static int _count = 0;
 
@@ -340,6 +341,8 @@ namespace osu_trainer.Controls
         private void DrawTriangleEffect(Graphics graphics, Brush[] brushes, float swipe = 1f)
         {
             var maxX = swipe * Width;
+            if (!this.allowAnimation)
+                return;
 
             foreach (var triangle in _triangles)
             {

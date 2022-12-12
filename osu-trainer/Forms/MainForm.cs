@@ -32,6 +32,10 @@ namespace osu_trainer
         private List<OptionSlider> diffSliders;
         private List<OsuCheckBox> checkControls;
 
+        private List<Button> saveButtons = null;
+        private List<OsuButton> profileButtons = null;
+        private List<Button> renameButtons = null;
+
         // Hotkeys
         private globalKeyboardHook kbhook;
         private bool hooked = true;
@@ -54,6 +58,24 @@ namespace osu_trainer
             Directory.SetCurrentDirectory(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location));
             InitializeComponent();
             Height = winHeight;
+            saveButtons = new List<Button>() 
+            { 
+                saveButton1, saveButton2, saveButton3, saveButton4,
+                saveButton5, saveButton6, saveButton7, saveButton8,
+                saveButton9, saveButton10, saveButton11, saveButton12, 
+            };
+            profileButtons = new List<OsuButton>()
+            {
+                profileButton1, profileButton2, profileButton3, profileButton4,
+                profileButton5, profileButton6, profileButton7, profileButton8,
+                profileButton9, profileButton10, profileButton11, profileButton12,
+            };
+            renameButtons = new List<Button>()
+            {
+                renameButton1, renameButton2, renameButton3, renameButton4,
+                renameButton5, renameButton6, renameButton7, renameButton8,
+                renameButton9, renameButton10, renameButton11, renameButton12,
+            };
 
             // Read version number from version.txt
             try
@@ -830,7 +852,6 @@ namespace osu_trainer
             e.Graphics.DrawString(Text, new Font(Font, FontStyle.Regular), Brushes.White, 10 + 16 + 4, 10);
         }
 
-
         private void BpmMultiplierTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -893,7 +914,6 @@ namespace osu_trainer
         private void profileButton11_Click(object sender, EventArgs e) => editor.LoadProfile(10);
         private void profileButton12_Click(object sender, EventArgs e) => editor.LoadProfile(11);
 
-
         private void saveButton1_Click(object sender, EventArgs e) => saveButtonClick(0);
         private void saveButton2_Click(object sender, EventArgs e) => saveButtonClick(1);
         private void saveButton3_Click(object sender, EventArgs e) => saveButtonClick(2);
@@ -909,9 +929,6 @@ namespace osu_trainer
 
         private void saveButtonClick(int whichProfile)
         {
-            var saveButtons = new List<Button>() { saveButton1, saveButton2, saveButton3, saveButton4,
-                                                   saveButton5, saveButton6, saveButton7, saveButton8,
-                                                   saveButton9, saveButton10, saveButton11, saveButton12, };
             saveButtons[whichProfile].ForeColor = Color.White;
             saveButtons[whichProfile].Text = "Saved!";
             saveButtonHighlight[whichProfile] = 1.0M;
@@ -939,57 +956,14 @@ namespace osu_trainer
         private void UpdateProfiles(object sender, EventArgs e)
         {
             bool profilesVisible = (editor.State == EditorState.NOT_READY) ? false : true;
-            profileButton1.Visible = profilesVisible;
-            profileButton2.Visible = profilesVisible;
-            profileButton3.Visible = profilesVisible;
-            profileButton4.Visible = profilesVisible;
-            profileButton5.Visible = profilesVisible;
-            profileButton6.Visible = profilesVisible;
-            profileButton7.Visible = profilesVisible;
-            profileButton8.Visible = profilesVisible;
-            profileButton9.Visible = profilesVisible;
-            profileButton10.Visible = profilesVisible;
-            profileButton11.Visible = profilesVisible;
-            profileButton12.Visible = profilesVisible;
+            for (int i = 0; i < profileButtons.Count; i++)
+            {
+                profileButtons[i].Visible = profilesVisible;
+                saveButtons[i].Visible = profilesVisible;
+                renameButtons[i].Visible = profilesVisible;
 
-            saveButton1.Visible = profilesVisible;
-            saveButton2.Visible = profilesVisible;
-            saveButton3.Visible = profilesVisible;
-            saveButton4.Visible = profilesVisible;
-            saveButton5.Visible = profilesVisible;
-            saveButton6.Visible = profilesVisible;
-            saveButton7.Visible = profilesVisible;
-            saveButton8.Visible = profilesVisible;
-            saveButton9.Visible = profilesVisible;
-            saveButton10.Visible = profilesVisible;
-            saveButton11.Visible = profilesVisible;
-            saveButton12.Visible = profilesVisible;
-
-            renameButton1.Visible = profilesVisible;
-            renameButton2.Visible = profilesVisible;
-            renameButton3.Visible = profilesVisible;
-            renameButton4.Visible = profilesVisible;
-            renameButton5.Visible = profilesVisible;
-            renameButton6.Visible = profilesVisible;
-            renameButton7.Visible = profilesVisible;
-            renameButton8.Visible = profilesVisible;
-            renameButton9.Visible = profilesVisible;
-            renameButton10.Visible = profilesVisible;
-            renameButton11.Visible = profilesVisible;
-            renameButton12.Visible = profilesVisible;
-
-            profileButton1.Text = editor.UserProfiles[0].Name;
-            profileButton2.Text = editor.UserProfiles[1].Name;
-            profileButton3.Text = editor.UserProfiles[2].Name;
-            profileButton4.Text = editor.UserProfiles[3].Name;
-            profileButton5.Text = editor.UserProfiles[4].Name;
-            profileButton6.Text = editor.UserProfiles[5].Name;
-            profileButton7.Text = editor.UserProfiles[6].Name;
-            profileButton8.Text = editor.UserProfiles[7].Name;
-            profileButton9.Text = editor.UserProfiles[8].Name;
-            profileButton10.Text = editor.UserProfiles[9].Name;
-            profileButton11.Text = editor.UserProfiles[10].Name;
-            profileButton12.Text = editor.UserProfiles[11].Name;
+                profileButtons[i].Text = editor.UserProfiles[i].Name;
+            }
         }
         private void ProfileHotkeyHandler(object sender, EventArgs e)
         {
@@ -1016,15 +990,12 @@ namespace osu_trainer
             }
         }
 
-        private List<decimal> saveButtonHighlight = Enumerable.Repeat(0M, 12).ToList();// new List<decimal>();
+        private List<decimal> saveButtonHighlight = Enumerable.Repeat(0M, 12).ToList();
         const decimal HIGHLIGHT_FADE = 0.03M;
         private void formAnimationTimer_Tick(object sender, EventArgs e)
         {
             Color startBackColor = Color.FromArgb(71, 115, 66);
             Color endBackColor = Color.FromArgb(45, 42, 63);
-            var saveButtons = new List<Button>() { saveButton1, saveButton2, saveButton3, saveButton4,
-                                                   saveButton5, saveButton6, saveButton7, saveButton8,
-                                                   saveButton9, saveButton10, saveButton11, saveButton12, };
             for (int i = 0; i < saveButtons.Count; i++)
             {
                 // linearly interpolate colour
@@ -1094,7 +1065,6 @@ namespace osu_trainer
             ApplyHotkeys();
         }
 
-
         private void updatesCheck_CheckedChanged(object sender, EventArgs e)
         {
             ToggleCheckForUpdates();
@@ -1146,6 +1116,31 @@ namespace osu_trainer
                 return;
             }
             return;
+        }
+
+        private void MainForm_Activated(object sender, EventArgs e)
+        {
+            foreach (OsuButton button in profileButtons)
+            {
+                button.allowAnimation = true;
+            }
+            GenerateMapButton.allowAnimation = true;
+            ResetButton.allowAnimation = true;
+            SongsFolderButton.allowAnimation = true;
+            this.formAnimationTimer.Start();
+
+        }
+
+        private void MainForm_Deactivate(object sender, EventArgs e)
+        {
+            foreach (OsuButton button in profileButtons)
+            {
+                button.allowAnimation = false;
+            }
+            SongsFolderButton.allowAnimation = false;
+            GenerateMapButton.allowAnimation = false;
+            ResetButton.allowAnimation = false;
+            this.formAnimationTimer.Stop();
         }
     }
 }
