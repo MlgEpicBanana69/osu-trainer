@@ -1,4 +1,4 @@
 github repository name: MlgEpicBanana69/osu-trainer
 application name: osu-trainer.exe
-current version: 1.7.2
+current version: v1.7.2
 check for updates: true
